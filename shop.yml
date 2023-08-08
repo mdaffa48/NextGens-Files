@@ -1,0 +1,615 @@
+# The title of the gui
+title: "&8Generator Shop"
+# The size of the gui
+size: 54
+
+# List of all items in the gui
+items:
+  wheat_generator:
+    type: GENERATOR
+    generator: wheat_generator
+    cost: 50
+    material: HAY_BLOCK
+    display-name: "#D8A073&lWheat Generator"
+    glowing: false
+    slots: [10]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#D8A073&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f24"
+      - "&8Corruption Chance: &f5%"
+      - "&aUpgrade Cost: &a&n$50"
+      - "&cReparation Cost: &c&n$12,5"
+      - "&7"
+      - "#D8A073&lPossible Drops"
+      - "&7Wheat &8(value: &a$8&8)"
+      - "&7Condensed Wheat &8(value: &a16&8)"
+      - "&7Money &8(value: &a$20&8)"
+      - "&7"
+      - "&7Cost to buy: &a$50"
+      - "&a> Click to purchase <"
+  melon_generator:
+    type: GENERATOR
+    generator: melon_generator
+    cost: 100
+    material: MELON
+    display-name: "#2CD842&lMelon Generator"
+    glowing: false
+    slots: [11]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#2CD842&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f24"
+      - "&8Corruption Chance: &f5%"
+      - "&aUpgrade Cost: &a&n$100"
+      - "&cReparation Cost: &c&n$25"
+      - "&7"
+      - "#2CD842&lPossible Drops"
+      - "&7Melon &8(value: &a$16&8)"
+      - "&7Condensed Melon &8(value: &a20&8)"
+      - "&7Money &8(value: &a$40&8)"
+      - "&7"
+      - "&7Cost to buy: &a$100"
+      - "&a> Click to purchase <"
+  pumpkin_generator:
+    type: GENERATOR
+    generator: pumpkin_generator
+    cost: 200
+    material: PUMPKIN
+    display-name: "#2CD842&lMelon Generator"
+    glowing: false
+    slots: [12]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FB913B&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f24"
+      - "&8Corruption Chance: &f0.75%"
+      - "&aUpgrade Cost: &a&n$100"
+      - "&cReparation Cost: &c&n$50"
+      - "&7"
+      - "#FB913B&lPossible Drops"
+      - "&7Pumpkin &8(value: &a$20&8)"
+      - "&7Condensed Pumpkin &8(value: &a40&8)"
+      - "&7Money &8(value: &a$60&8)"
+      - "&7"
+      - "&7Cost to buy: &a$200"
+      - "&a> Click to purchase <"
+  coal_generator:
+    type: GENERATOR
+    generator: coal_generator
+    cost: 300
+    material: COAL_BLOCK
+    display-name: "#726365&lCoal Generator"
+    glowing: false
+    slots: [13]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#726365&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f24"
+      - "&8Corruption Chance: &f1%"
+      - "&aUpgrade Cost: &a&n$100"
+      - "&cReparation Cost: &c&n$75"
+      - "&7"
+      - "#726365&lPossible Drops"
+      - "&7Coal &8(value: &a$40&8)"
+      - "&7Condensed Coal &8(value: &a60&8)"
+      - "&7Money &8(value: &a$80&8)"
+      - "&7"
+      - "&7Cost to buy: &a$300"
+      - "&a> Click to purchase <"
+  iron_generator:
+    type: GENERATOR
+    generator: iron_generator
+    cost: 400
+    material: IRON_BLOCK
+    display-name: "#FFDFE2&lIron Generator"
+    glowing: false
+    slots: [14]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FFDFE2&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f5"
+      - "&8Corruption Chance: &f1.25%"
+      - "&aUpgrade Cost: &a&n$100"
+      - "&cReparation Cost: &c&n$100"
+      - "&7"
+      - "#FFDFE2&lPossible Drops"
+      - "&7Iron &8(value: &a$60&8)"
+      - "&7Condensed Iron &8(value: &a80&8)"
+      - "&7Money &8(value: &a$120&8)"
+      - "&7"
+      - "&7Cost to buy: &a$400"
+      - "&a> Click to purchase <"
+  gold_generator:
+    type: GENERATOR
+    generator: gold_generator
+    cost: 500
+    material: GOLD_BLOCK
+    display-name: "#FBBE06&lGold Generator"
+    glowing: false
+    slots: [15]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FBBE06&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f6"
+      - "&8Corruption Chance: &f1.5%"
+      - "&aUpgrade Cost: &a&n$250"
+      - "&cReparation Cost: &c&n$125"
+      - "&7"
+      - "#FBBE06&lPossible Drops"
+      - "&7Gold &8(value: &a$80&8)"
+      - "&7Condensed Gold &8(value: &a120&8)"
+      - "&7Money &8(value: &a$160&8)"
+      - "&7"
+      - "&7Cost to buy: &a$500"
+      - "&a> Click to purchase <"
+  redstone_generator:
+    type: GENERATOR
+    generator: redstone_generator
+    cost: 750
+    material: REDSTONE_BLOCK
+    display-name: "#FB2727&lRedstone Generator"
+    glowing: false
+    slots: [16]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FB2727&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f7"
+      - "&8Corruption Chance: &f1.75%"
+      - "&aUpgrade Cost: &a&n$250"
+      - "&cReparation Cost: &c&n$187,5"
+      - "&7"
+      - "#FB2727&lPossible Drops"
+      - "&7Redstone &8(value: &a$120&8)"
+      - "&7Condensed Redstone &8(value: &a160&8)"
+      - "&7Money &8(value: &a$240&8)"
+      - "&7"
+      - "&7Cost to buy: &a$750"
+      - "&a> Click to purchase <"
+  lapis_generator:
+    type: GENERATOR
+    generator: lapis_generator
+    cost: 1000
+    material: LAPIS_BLOCK
+    display-name: "#4042FB&lLapis Generator"
+    glowing: false
+    slots: [19]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#4042FB&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f8"
+      - "&8Corruption Chance: &f2%"
+      - "&aUpgrade Cost: &a&n$4000"
+      - "&cReparation Cost: &c&n$500"
+      - "&7"
+      - "#4042FB&lPossible Drops"
+      - "&7Lapis &8(value: &a$160&8)"
+      - "&7Condensed Lapis &8(value: &a240&8)"
+      - "&7Money &8(value: &a$320&8)"
+      - "&7"
+      - "&7Cost to buy: &a$1000"
+      - "&a> Click to purchase <"
+  diamond_generator:
+    type: GENERATOR
+    generator: diamond_generator
+    cost: 5000
+    material: DIAMOND_BLOCK
+    display-name: "#4FF6FB&lDiamond Generator"
+    glowing: false
+    slots: [20]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#4FF6FB&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f9"
+      - "&8Corruption Chance: &f2.25%"
+      - "&aUpgrade Cost: &a&n$5000"
+      - "&cReparation Cost: &c&n$1,250"
+      - "&7"
+      - "#4FF6FB&lPossible Drops"
+      - "&7Diamond &8(value: &a$240&8)"
+      - "&7Condensed Diamond &8(value: &a320&8)"
+      - "&7Money &8(value: &a$400&8)"
+      - "&7"
+      - "&7Cost to buy: &a$5000"
+      - "&a> Click to purchase <"
+  emerald_generator:
+    type: GENERATOR
+    generator: emerald_generator
+    cost: 10000
+    material: EMERALD_BLOCK
+    display-name: "#74FB3D&lEmerald Generator"
+    glowing: false
+    slots: [21]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#74FB3D&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f10"
+      - "&8Corruption Chance: &f2.5%"
+      - "&aUpgrade Cost: &a&n$15,000"
+      - "&cReparation Cost: &c&n$2,500"
+      - "&7"
+      - "#74FB3D&lPossible Drops"
+      - "&7Emerald &8(value: &a$320&8)"
+      - "&7Condensed Emerald &8(value: &a400&8)"
+      - "&7Money &8(value: &a$480&8)"
+      - "&7"
+      - "&7Cost to buy: &a$10000"
+      - "&a> Click to purchase <"
+  quartz_generator:
+    type: GENERATOR
+    generator: quartz_generator
+    cost: 25000
+    material: QUARTZ
+    display-name: "#F7FBB1&lQuartz Generator"
+    glowing: false
+    slots: [22]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#F7FBB1&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f11"
+      - "&8Corruption Chance: &f2.75%"
+      - "&aUpgrade Cost: &a&n$25,000"
+      - "&cReparation Cost: &c&n$6,250"
+      - "&7"
+      - "#F7FBB1&lPossible Drops"
+      - "&7Quartz &8(value: &a$400&8)"
+      - "&7Condensed Quartz &8(value: &a480&8)"
+      - "&7Money &8(value: &a$560&8)"
+      - "&7"
+      - "&7Cost to buy: &a$25000"
+      - "&a> Click to purchase <"
+  gold_nugget_generator:
+    type: GENERATOR
+    generator: gold_nugget_generator
+    cost: 50000
+    material: NETHER_GOLD_ORE
+    display-name: "#FBC379&lGold Nugget Generator"
+    glowing: false
+    slots: [23]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FBC379&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f12"
+      - "&8Corruption Chance: &f3%"
+      - "&aUpgrade Cost: &a&n$50,000"
+      - "&cReparation Cost: &c&n$12,500"
+      - "&7"
+      - "#FBC379&lPossible Drops"
+      - "&7Gold Nugget &8(value: &a$480&8)"
+      - "&7Condensed Gold Nugget &8(value: &a560&8)"
+      - "&7Money &8(value: &a$640&8)"
+      - "&7"
+      - "&7Cost to buy: &a$50000"
+      - "&a> Click to purchase <"
+  sea_lantern_generator:
+    type: GENERATOR
+    generator: sea_lantern_generator
+    cost: 100000
+    material: SEA_LANTERN
+    display-name: "#9DF6FF&lSea Lantern Generator"
+    glowing: false
+    slots: [24]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#9DF6FF&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f13"
+      - "&8Corruption Chance: &f3.25%"
+      - "&aUpgrade Cost: &a&n$150,000"
+      - "&cReparation Cost: &c&n$25,000"
+      - "&7"
+      - "#9DF6FF&lPossible Drops"
+      - "&7Sea Lantern &8(value: &a$560&8)"
+      - "&7Condensed Sea Lantern &8(value: &a640&8)"
+      - "&7Money &8(value: &a$720&8)"
+      - "&7"
+      - "&7Cost to buy: &a$100,000"
+      - "&a> Click to purchase <"
+  magma_generator:
+    type: GENERATOR
+    generator: magma_generator
+    cost: 250000
+    material: MAGMA_BLOCK
+    display-name: "#FF4D0B&lMagma Generator"
+    glowing: false
+    slots: [25]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FF4D0B&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f14"
+      - "&8Corruption Chance: &f3.5%"
+      - "&aUpgrade Cost: &a&n$250,000"
+      - "&cReparation Cost: &c&n$62,500"
+      - "&7"
+      - "#FF4D0B&lPossible Drops"
+      - "&7Magma &8(value: &a$640&8)"
+      - "&7Condensed Magma &8(value: &a720&8)"
+      - "&7Money &8(value: &a$800&8)"
+      - "&7"
+      - "&7Cost to buy: &a$250,000"
+      - "&a> Click to purchase <"
+  glowstone_generator:
+    type: GENERATOR
+    generator: glowstone_generator
+    cost: 500000
+    material: GLOWSTONE
+    display-name: "#FBC831&lGlowstone Generator"
+    glowing: false
+    slots: [28]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FBC831&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f15"
+      - "&8Corruption Chance: &f3.75%"
+      - "&aUpgrade Cost: &a&n$500,000"
+      - "&cReparation Cost: &c&n$125,000"
+      - "&7"
+      - "#FBC831&lPossible Drops"
+      - "&7Glowstone &8(value: &a$720&8)"
+      - "&7Condensed Glowstone &8(value: &a800&8)"
+      - "&7Money &8(value: &a$1600&8)"
+      - "&7"
+      - "&7Cost to buy: &a$500,000"
+      - "&a> Click to purchase <"
+  tube_coral_generator:
+    type: GENERATOR
+    generator: tube_coral_generator
+    cost: 1000000
+    material: TUBE_CORAL_BLOCK
+    display-name: "#2568FF&lTube Coral Generator"
+    glowing: false
+    slots: [29]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#2568FF&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f16"
+      - "&8Corruption Chance: &f4%"
+      - "&aUpgrade Cost: &a&n$1,500,000"
+      - "&cReparation Cost: &c&n$250,000"
+      - "&7"
+      - "#2568FF&lPossible Drops"
+      - "&7Tube Coral &8(value: &a$800&8)"
+      - "&7Condensed Tube Coral &8(value: &a1600&8)"
+      - "&7Money &8(value: &a$2000&8)"
+      - "&7"
+      - "&7Cost to buy: &a$1,000,000"
+      - "&a> Click to purchase <"
+  brain_coral_generator:
+    type: GENERATOR
+    generator: brain_coral_generator
+    cost: 2500000
+    material: BRAIN_CORAL_BLOCK
+    display-name: "#FB45F9&lBrain Coral Generator"
+    glowing: false
+    slots: [30]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FB45F9&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f17"
+      - "&8Corruption Chance: &f4.25%"
+      - "&aUpgrade Cost: &a&n$2,500,000"
+      - "&cReparation Cost: &c&n$625,000"
+      - "&7"
+      - "#FB45F9&lPossible Drops"
+      - "&7Brain Coral &8(value: &a$1600&8)"
+      - "&7Condensed Brain Coral &8(value: &a2000&8)"
+      - "&7Money &8(value: &a$2400&8)"
+      - "&7"
+      - "&7Cost to buy: &a$2,500,000"
+      - "&a> Click to purchase <"
+  bubble_coral_generator:
+    type: GENERATOR
+    generator: bubble_coral_generator
+    cost: 5000000
+    material: BUBBLE_CORAL_BLOCK
+    display-name: "#A82AFF&lBubble Coral Generator"
+    glowing: false
+    slots: [31]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#A82AFF&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f18"
+      - "&8Corruption Chance: &f4.5%"
+      - "&aUpgrade Cost: &a&n$5,000,000"
+      - "&cReparation Cost: &c&n$1,250,000"
+      - "&7"
+      - "#A82AFF&lPossible Drops"
+      - "&7Bubble Coral &8(value: &a$2000&8)"
+      - "&7Condensed Bubble Coral &8(value: &a2400&8)"
+      - "&7Money &8(value: &a$2800&8)"
+      - "&7"
+      - "&7Cost to buy: &a$5,000,000"
+      - "&a> Click to purchase <"
+  fire_coral_generator:
+    type: GENERATOR
+    generator: fire_coral_generator
+    cost: 10000000
+    material: FIRE_CORAL_BLOCK
+    display-name: "#FB4242&lFire Coral Generator"
+    glowing: false
+    slots: [32]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FB4242&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f19"
+      - "&8Corruption Chance: &f4.75%"
+      - "&aUpgrade Cost: &a&n$15,000,000"
+      - "&cReparation Cost: &c&n$2,500,000"
+      - "&7"
+      - "#FB4242&lPossible Drops"
+      - "&7Fire Coral &8(value: &a$2400&8)"
+      - "&7Condensed Fire Coral &8(value: &a2800&8)"
+      - "&7Money &8(value: &a$3200&8)"
+      - "&7"
+      - "&7Cost to buy: &a$10,000,000"
+      - "&a> Click to purchase <"
+  horn_coral_generator:
+    type: GENERATOR
+    generator: horn_coral_generator
+    cost: 25000000
+    material: HORN_CORAL_BLOCK
+    display-name: "#FBF945&lHorn Coral Generator"
+    glowing: false
+    slots: [33]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FBF945&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f20"
+      - "&8Corruption Chance: &f5%"
+      - "&aUpgrade Cost: &a&n$25,000,000"
+      - "&cReparation Cost: &c&n$6,250,000"
+      - "&7"
+      - "#FBF945&lPossible Drops"
+      - "&7Horn Coral &8(value: &a$2800&8)"
+      - "&7Condensed Horn Coral &8(value: &a$3200&8)"
+      - "&7Money &8(value: &a$3600&8)"
+      - "&7"
+      - "&7Cost to buy: &a$25,000,000"
+      - "&a> Click to purchase <"
+  slime_generator:
+    type: GENERATOR
+    generator: slime_generator
+    cost: 50000000
+    material: SLIME_BLOCK
+    display-name: "#ACFB74&lSlime Generator"
+    glowing: false
+    slots: [34]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#ACFB74&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f21"
+      - "&8Corruption Chance: &f5.25%"
+      - "&aUpgrade Cost: &a&n$50,000,000"
+      - "&cReparation Cost: &c&n$12,500,000"
+      - "&7"
+      - "#ACFB74&lPossible Drops"
+      - "&7Slime &8(value: &a$3200&8)"
+      - "&7Condensed Slime &8(value: &a$3600&8)"
+      - "&7Money &8(value: &a$4000&8)"
+      - "&7"
+      - "&7Cost to buy: &a$50,000,000"
+      - "&a> Click to purchase <"
+  honey_generator:
+    type: GENERATOR
+    generator: honey_generator
+    cost: 100000000
+    material: HONEY_BLOCK
+    display-name: "#FFC61B&lHoney Generator"
+    glowing: false
+    slots: [37]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FFC61B&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f22"
+      - "&8Corruption Chance: &f5.5%"
+      - "&aUpgrade Cost: &a&n$50,000,000"
+      - "&cReparation Cost: &c&n$25,000,000"
+      - "&7"
+      - "#FFC61B&lPossible Drops"
+      - "&7Honey &8(value: &a$3600&8)"
+      - "&7Condensed Honey &8(value: &a$4000&8)"
+      - "&7Money &8(value: &a$4400&8)"
+      - "&7"
+      - "&7Cost to buy: &a$100,000,000"
+      - "&a> Click to purchase <"
+  netherite_generator:
+    type: GENERATOR
+    generator: netherite_generator
+    cost: 150000000
+    material: NETHERITE_BLOCK
+    display-name: "#B77F44&lNethrite Generator"
+    glowing: false
+    slots: [38]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#B77F44&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f23"
+      - "&8Corruption Chance: &f5.75%"
+      - "&aUpgrade Cost: &a&n$50,000,000"
+      - "&cReparation Cost: &c&n$37,500,000"
+      - "&7"
+      - "#B77F44&lPossible Drops"
+      - "&7Netherite &8(value: &a$4000&8)"
+      - "&7Condensed Netherite &8(value: &a$4400&8)"
+      - "&7Money &8(value: &a$4800&8)"
+      - "&7"
+      - "&7Cost to buy: &a$150,000,000"
+      - "&a> Click to purchase <"
+  anchor_generator:
+    type: GENERATOR
+    generator: anchor_generator
+    cost: 200000000
+    material: RESPAWN_ANCHOR
+    display-name: "#742CFB&lAnchor Generator"
+    glowing: false
+    slots: [39]
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#742CFB&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f24"
+      - "&8Corruption Chance: &f6%"
+      - "&aUpgrade Cost: &a&nUn-Upgradable"
+      - "&cReparation Cost: &c&n$50,000,000"
+      - "&7"
+      - "#742CFB&lPossible Drops"
+      - "&7Wither Rose &8(value: &a$4400&8)"
+      - "&7Condensed Wither Rose &8(value: &a$4800&8)"
+      - "&7Money &8(value: &a$5600&8)"
+      - "&7"
+      - "&7Cost to buy: &a$200,000,000"
+      - "&a> Click to purchase <"
+  # Unique identifier, could be anything
+  dummy:
+    type: DUMMY
+    material: BLACK_STAINED_GLASS_PANE
+    display-name: "&f"
+    glowing: false
+    slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 44, 45, 46, 47, 47, 48, 49, 50, 51, 52, 53]
+    lore: []

@@ -1,0 +1,157 @@
+omega_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#5DB6FF&lOmega Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 5000 # The cost to fix the corruption
+    chance: 6.25 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: null
+    upgrade-cost: 10000
+  # The generator item
+  item:
+    material: REINFORCED_DEEPSLATE
+    display-name: "#5DB6FF&lOmega Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#5DB6FF&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f24"
+      - "&8Corruption Chance: &f6.25%"
+      - "&aUpgrade Cost: &a&nNon Upgradable"
+      - "&cReparation Cost: &c&n$50,000,000"
+      - "&7"
+      - "#5DB6FF&lPossible Drops"
+      - "&7Nether Star &8(value: &a$4800&8)"
+      - "&7Condensed Nether Star &8(value: &a$5600&8)"
+      - "&7Money &8(value: &a$6000&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 4800 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: NETHER_STAR
+        display-name: "#5DB6FF&lNether Star &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 25"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$4800"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 5600 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTdjNjZmNWE0YjQwODAwNWIzMzZkYTY2NzZlOGY2YTJhNjdlZWEzMTVmYjdlOTEzNjBhY2MwNDc4MDJmYTMyMCJ9fX0=
+        display-name: "#5DB6FF&lCondensed Nether Star &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 25"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$5600"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 6000"
+
+space_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#0E1FFF&lSpace Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 50000000 # The cost to fix the corruption
+    chance: 6.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: null
+    upgrade-cost: 10000
+  # The generator item
+  item:
+    material: SCULK_CATALYST
+    display-name: "#0E1FFF&lSpace Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#0E1FFF&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f24"
+      - "&8Corruption Chance: &f6.5%"
+      - "&aUpgrade Cost: &a&nUn-Upgradable"
+      - "&cReparation Cost: &c&n$50,000,000"
+      - "&7"
+      - "#0E1FFF&lPossible Drops"
+      - "&7Nether Star &8(value: &a$4800&8)"
+      - "&7Condensed Nether star &8(value: &a$5600&8)"
+      - "&7Money &8(value: &a$6000&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 5600 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: NETHER_STAR
+        display-name: "#0E1FFF&lSpace Shard &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 26"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$4800"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 4800 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM4YzljMTAxM2NlNzQ5MTE1MTc0NGQzZTYyOTYyN2UxNjk5MWZhYTY2ZTk0NDAwNzRmY2ZiYWVmMGE4ZmM4OCJ9fX0=
+        display-name: "#0E1FFF&lCondensed Space Shard &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 26"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$5600"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 6000"

@@ -1,0 +1,1896 @@
+# This must be unique
+wheat_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#D8A073&lWheat Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 12.5 # The cost to fix the corruption
+    chance: 0.25 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: melon_generator
+    upgrade-cost: 50
+  # The generator item
+  item:
+    material: HAY_BLOCK
+    display-name: "#D8A073&lWheat Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#D8A073&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f1"
+      - "&8Corruption Chance: &f0.25%"
+      - "&aUpgrade Cost: &a&n$50"
+      - "&cReparation Cost: &c&n$12,5"
+      - "&7"
+      - "#D8A073&lPossible Drops"
+      - "&7Wheat &8(value: &a$8&8)"
+      - "&7Condensed Wheat &8(value: &a16&8)"
+      - "&7Money &8(value: &a$20&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 8 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: WHEAT
+        display-name: "&e&lWheat &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 1"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$8"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 16 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg2YmFkYjBkOTEzYjM5MWZiNDhkNzc3NmMzNzhjYTNmNGIyZGJlNzI0NTM0MDM0ZjM1MGNjZDM4ZjkwNDQ3MyJ9fX0=
+        display-name: "#D8A073&lCondensed Wheat &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 1"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$16"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 20"
+
+melon_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#2CD842&lMelon Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 25 # The cost to fix the corruption
+    chance: 0.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: pumpkin_generator
+    upgrade-cost: 100
+  # The generator item
+  item:
+    material: MELON
+    display-name: "#2CD842&lMelon Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#2CD842&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f2"
+      - "&8Corruption Chance: &f0.5%"
+      - "&aUpgrade Cost: &a&n$100"
+      - "&cReparation Cost: &c&n$25"
+      - "&7"
+      - "#2CD842&lPossible Drops"
+      - "&7Melon &8(value: &a$16&8)"
+      - "&7Condensed Melon &8(value: &a$20&8)"
+      - "&7Money &8(value: &a$40&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 16 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: MELON_SLICE
+        display-name: "#2CD842&lMelon &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 2"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$16"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 32 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVhODkwM2EzNWU0MGIyODczOTk1NjVhMGU5YTdiZGE1ZmM1NjA2YmUyMWMxOTZmM2IyYjAzNWQxNTZhMWEwZCJ9fX0=
+        display-name: "#2CD842&lCondensed Melon &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 2"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$20"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 40"
+
+pumpkin_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FB913B&lPumpkin Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 50 # The cost to fix the corruption
+    chance: 0.75 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: coal_generator
+    upgrade-cost: 100
+  # The generator item
+  item:
+    material: PUMPKIN
+    display-name: "#FB913B&lPumpkin Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FB913B&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f3"
+      - "&8Corruption Chance: &f0.75%"
+      - "&aUpgrade Cost: &a&n$100"
+      - "&cReparation Cost: &c&n$50"
+      - "&7"
+      - "#FB913B&lPossible Drops"
+      - "&7Pumpkin &8(value: &a$20&8)"
+      - "&7Condensed Pumpkin &8(value: &a$40&8)"
+      - "&7Money &8(value: &a$60&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 20 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: PUMPKIN_PIE
+        display-name: "#FB913B&lPumpkin &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 3"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$20"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 40 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg2YmFkYjBkOTEzYjM5MWZiNDhkNzc3NmMzNzhjYTNmNGIyZGJlNzI0NTM0MDM0ZjM1MGNjZDM4ZjkwNDQ3MyJ9fX0=
+        display-name: "#FB913B&lCondensed Pumpkin &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 3"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$40"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 60"
+
+coal_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#726365&lCoal Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 75 # The cost to fix the corruption
+    chance: 1 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: iron_generator
+    upgrade-cost: 100
+  # The generator item
+  item:
+    material: COAL_BLOCK
+    display-name: "#726365&lCoal Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#726365&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f4"
+      - "&8Corruption Chance: &f1%"
+      - "&aUpgrade Cost: &a&n$100"
+      - "&cReparation Cost: &c&n$75"
+      - "&7"
+      - "#726365&lPossible Drops"
+      - "&7Coal &8(value: &a$40&8)"
+      - "&7Condensed Coal &8(value: &a$60&8)"
+      - "&7Money &8(value: &a$80&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 40 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: COAL
+        display-name: "#726365&lCoal &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 4"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$40"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 60 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTY3YjQ3ZmJkMzdjNmQ5ZDhkMjJkOTczZTcyOTBlODA4NTJlOTI2NmEwNzZmYjdhYjIxNWFmZTkxYjgxZWQ2YyJ9fX0=
+        display-name: "#726365&lCondensed Coal &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 4"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$160"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 80"
+
+iron_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FFDFE2&lIron Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 100 # The cost to fix the corruption
+    chance: 1.25 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: gold_generator
+    upgrade-cost: 100
+  # The generator item
+  item:
+    material: IRON_BLOCK
+    display-name: "#FFDFE2&lIron Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FFDFE2&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f5"
+      - "&8Corruption Chance: &f1.25%"
+      - "&aUpgrade Cost: &a&n$100"
+      - "&cReparation Cost: &c&n$100"
+      - "&7"
+      - "#FFDFE2&lPossible Drops"
+      - "&7Iron &8(value: &a$60&8)"
+      - "&7Condensed Iron &8(value: &a$80&8)"
+      - "&7Money &8(value: &a$120&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 60 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: IRON_INGOT
+        display-name: "#FFDFE2&lIron &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 5"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$60"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 80 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFhNzg1OTE2ZDJkMTdjYTBlYTJhZDIzZDgwMjQ3YzdjNTAyMTQ0MzkwM2JiYWI3YjI0Yjc5MzRiNmEzNjFhYiJ9fX0=
+        display-name: "#FFDFE2&lCondensed Iron &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 5"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$80"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 120"
+
+gold_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FBBE06&lGold Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 125 # The cost to fix the corruption
+    chance: 1.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: redstone_generator
+    upgrade-cost: 250
+  # The generator item
+  item:
+    material: GOLD_BLOCK
+    display-name: "#FBBE06&lGold Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FBBE06&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f6"
+      - "&8Corruption Chance: &f1.5%"
+      - "&aUpgrade Cost: &a&n$250"
+      - "&cReparation Cost: &c&n$125"
+      - "&7"
+      - "#FBBE06&lPossible Drops"
+      - "&7Gold &8(value: &a$80&8)"
+      - "&7Condensed Gold &8(value: &a$120&8)"
+      - "&7Money &8(value: &a$160&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 80 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: GOLD_INGOT
+        display-name: "&e&lGold &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 6"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$80"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 120 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdmNTdlN2FhOGRlODY1OTFiYjBiYzUyY2JhMzBhNDlkOTMxYmZhYmJkNDdiYmM4MGJkZDY2MjI1MTM5MjE2MSJ9fX0=
+        display-name: "#FBBE06&lCondensed Gold &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 6"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$120"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 160"
+
+redstone_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FB2727&lRedstone Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 187.5 # The cost to fix the corruption
+    chance: 1.75 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: lapis_generator
+    upgrade-cost: 250
+  # The generator item
+  item:
+    material: REDSTONE_BLOCK
+    display-name: "#FB2727&lRedstone Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FB2727&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f7"
+      - "&8Corruption Chance: &f1.75%"
+      - "&aUpgrade Cost: &a&n$250"
+      - "&cReparation Cost: &c&n$187,5"
+      - "&7"
+      - "#FB2727&lPossible Drops"
+      - "&7Redstone &8(value: &a$120&8)"
+      - "&7Condensed Redstone &8(value: &a$160&8)"
+      - "&7Money &8(value: &a$240&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 120 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: REDSTONE
+        display-name: "#FB2727&lRedstone &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 7"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$120"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 160 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmI3OGZhNWRlZmU3MmRlYmNkOWM3NmFiOWY0ZTExNDI1MDQ3OWJiOWI0NGY0Mjg4N2JiZjZmNzM4NjEyYiJ9fX0=
+        display-name: "#FB2727&lCondensed Redstone &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 7"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$160"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 240"
+
+lapis_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#4042FB&lLapis Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 500 # The cost to fix the corruption
+    chance: 2 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: diamond_generator
+    upgrade-cost: 4000
+  # The generator item
+  item:
+    material: LAPIS_BLOCK
+    display-name: "#4042FB&lLapis Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#4042FB&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f8"
+      - "&8Corruption Chance: &f2%"
+      - "&aUpgrade Cost: &a&n$4000"
+      - "&cReparation Cost: &c&n$500"
+      - "&7"
+      - "#4042FB&lPossible Drops"
+      - "&7Lapis &8(value: &a$160&8)"
+      - "&7Condensed Lapis &8(value: &a$240&8)"
+      - "&7Money &8(value: &a$320&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 160 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: LAPIS_LAZULI
+        display-name: "#4042FB&lLapis &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 8"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$160"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 240 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjljMTQ5Mzc5YmZmMzcxNGYwYTE0NmE0OTc1YTkyMzE1NmUxZDU1NjMyOGVkYjg5MjEzNTE4MmJhM2FhM2M4MyJ9fX0=
+        display-name: "#4042FB&lCondensed Lapis &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 8"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$240"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 320"
+
+diamond_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#4FF6FB&lDiamond Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 1250 # The cost to fix the corruption
+    chance: 2.25 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: emerald_generator
+    upgrade-cost: 5000
+  # The generator item
+  item:
+    material: DIAMOND_BLOCK
+    display-name: "#4FF6FB&lDiamond Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#4FF6FB&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f9"
+      - "&8Corruption Chance: &f2.25%"
+      - "&aUpgrade Cost: &a&n$5000"
+      - "&cReparation Cost: &c&n$1,250"
+      - "&7"
+      - "#4FF6FB&lPossible Drops"
+      - "&7Diamond &8(value: &a$240&8)"
+      - "&7Condensed Diamond &8(value: &a$320&8)"
+      - "&7Money &8(value: &a$400&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 240 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: DIAMOND
+        display-name: "#4FF6FB&lDiamond &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 9"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$240"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 320 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjljMTQ5Mzc5YmZmMzcxNGYwYTE0NmE0OTc1YTkyMzE1NmUxZDU1NjMyOGVkYjg5MjEzNTE4MmJhM2FhM2M4MyJ9fX0=
+        display-name: "#4FF6FB&lCondensed Diamond &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 9"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$320"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 400"
+
+emerald_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#74FB3D&lEmerald Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 2500 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: quartz_generator
+    upgrade-cost: 15000
+  # The generator item
+  item:
+    material: EMERALD_BLOCK
+    display-name: "#74FB3D&lEmerald Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#74FB3D&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f10"
+      - "&8Corruption Chance: &f2.5%"
+      - "&aUpgrade Cost: &a&n$15,000"
+      - "&cReparation Cost: &c&n$2,500"
+      - "&7"
+      - "#74FB3D&lPossible Drops"
+      - "&7Emerald &8(value: &a$320&8)"
+      - "&7Condensed Emerald &8(value: &a$400&8)"
+      - "&7Money &8(value: &a$480&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 320 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: EMERALD
+        display-name: "#74FB3D&lEmerald &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 10"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$320"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 400 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmMwZTZkOWUyNDI3MzU0ODE5MThjNWZkMTQ0OThiZDc2MGJiOWY0ZmY2NDMwYWQ0Njk2YjM4ZThhODgzZGE5NyJ9fX0=
+        display-name: "#74FB3D&lCondensed Emerald &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 10"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$400"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 480"
+
+quartz_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#F7FBB1&lQuartz Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 6250 # The cost to fix the corruption
+    chance: 2.75 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: gold_nugget_generator
+    upgrade-cost: 25000
+  # The generator item
+  item:
+    material: QUARTZ_BLOCK
+    display-name: "#F7FBB1&lQuartz Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#F7FBB1&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f11"
+      - "&8Corruption Chance: &f2.75%"
+      - "&aUpgrade Cost: &a&n$25,000"
+      - "&cReparation Cost: &c&n$6,250"
+      - "&7"
+      - "#F7FBB1&lPossible Drops"
+      - "&7Quartz &8(value: &a$400&8)"
+      - "&7Condensed Quartz &8(value: &a$480&8)"
+      - "&7Money &8(value: &a$560&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 400 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: QUARTZ
+        display-name: "#F7FBB1&lQuartz &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 11"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$400"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 480 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNiNTAwMWE2NzAwN2E5M2FkZTY2NTkxNzVlOTA1NGE5Mjk3NmIwODdmYzYyOWYwNDJiY2Q1N2U3NzU3NjQ2YSJ9fX0=
+        display-name: "#F7FBB1&lCondensed Quartz &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 11"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$480"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 560"
+
+gold_nugget_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FBC379&lGold Nugget Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 12500 # The cost to fix the corruption
+    chance: 3 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: sea_lantern_generator
+    upgrade-cost: 50000
+  # The generator item
+  item:
+    material: NETHER_GOLD_ORE
+    display-name: "#FBC379&lGold Nugget Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FBC379&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f12"
+      - "&8Corruption Chance: &f3%"
+      - "&aUpgrade Cost: &a&n$50,000"
+      - "&cReparation Cost: &c&n$12,500"
+      - "&7"
+      - "#FBC379&lPossible Drops"
+      - "&7Gold Nugget &8(value: &a$480&8)"
+      - "&7Condensed Gold Nugget &8(value: &a$560&8)"
+      - "&7Money &8(value: &a$640&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 480 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: GOLD_NUGGET
+        display-name: "#FBC379&lGold Nugget &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 12"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$480"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 560 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmViNDM1N2VkYWU0MjlmYmFkOTVmMzI4MTI2MjVjNjExMmNmMTdhZDk2NDZhNmU4ZTdlMDM2NjZlYjk1NGFjOCJ9fX0=
+        display-name: "&e&lCondensed Gold Nugget &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 12"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$560"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 640"
+
+sea_lantern_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#9DF6FF&lSea Lantern Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 25000 # The cost to fix the corruption
+    chance: 3.25 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: magma_generator
+    upgrade-cost: 150000
+  # The generator item
+  item:
+    material: SEA_LANTERN
+    display-name: "#9DF6FF&lSea Lantern Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#9DF6FF&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f13"
+      - "&8Corruption Chance: &f3.25%"
+      - "&aUpgrade Cost: &a&n$150,000"
+      - "&cReparation Cost: &c&n$25,000"
+      - "&7"
+      - "#9DF6FF&lPossible Drops"
+      - "&7Sea Lantern &8(value: &a$560&8)"
+      - "&7Condensed Sea Lantern &8(value: &a$640&8)"
+      - "&7Money &8(value: &a$720&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 560 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: PRISMARINE_CRYSTALS
+        display-name: "#9DF6FF&lSea Lantern &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 13"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$560"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 640 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2I1ZjNhOGE3YTUzMzhmZjhjMDFiZGQ0ZjViM2E1Y2FmNTQ5OWY0YzA0ZTg0ZTQyMzBkMDNmNDRjMzUyNWQ2ZCJ9fX0=
+        display-name: "&e&lCondensed Wheat &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 13"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$640"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 720"
+
+magma_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FF4D0B&lMagma Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 62500 # The cost to fix the corruption
+    chance: 3.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: glowstone_generator
+    upgrade-cost: 250000
+  # The generator item
+  item:
+    material: MAGMA_BLOCK
+    display-name: "#FF4D0B&lMagma Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FF4D0B&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f14"
+      - "&8Corruption Chance: &f3.5%"
+      - "&aUpgrade Cost: &a&n$250,000"
+      - "&cReparation Cost: &c&n$62,500"
+      - "&7"
+      - "#FF4D0B&lPossible Drops"
+      - "&7Magma &8(value: &a$640&8)"
+      - "&7Condensed Magma &8(value: &a$720&8)"
+      - "&7Money &8(value: &a$800&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 640 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: MAGMA_CREAM
+        display-name: "#FF4D0B&lMagma &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 14"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$640"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 720 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzIxZDA5MzBiZDYxZmVhNGNiOTAyN2IwMGU5NGUxM2Q2MjAyOWM1MjRlYTBiMzI2MGM3NDc0NTdiYTFiY2ZhMSJ9fX0=
+        display-name: "#FF4D0B&lCondensed Magma &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 14"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$720"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 800"
+
+glowstone_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FBC831&lGlowstone Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 125000 # The cost to fix the corruption
+    chance: 3.75 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: tube_coral_generator
+    upgrade-cost: 500000
+  # The generator item
+  item:
+    material: GLOWSTONE
+    display-name: "#FBC831&lGlowstone Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FBC831&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f15"
+      - "&8Corruption Chance: &f3.75%"
+      - "&aUpgrade Cost: &a&n$500,000"
+      - "&cReparation Cost: &c&n$125,000"
+      - "&7"
+      - "#FBC831&lPossible Drops"
+      - "&7Glowstone &8(value: &a$720&8)"
+      - "&7Condensed Glowstone &8(value: &a$800&8)"
+      - "&7Money &8(value: &a$1600&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 720 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: GLOWSTONE_DUST
+        display-name: "#FBC831&lGlowstone &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 15"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$720"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 800 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTU1YzdlOTk3NDk4YmRjM2I5YmU0MzhlZDgyN2E5NGUzZTcyMThhMzE4NTU4MDQwMDY3ODg1MzhlYjdmMDNmYSJ9fX0=
+        display-name: "&e&lCondensed Glowstone &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 15"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$800"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 1600"
+
+tube_coral_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#2568FF&lTube Coral Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 500000 # The cost to fix the corruption
+    chance: 4 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: brain_coral_generator
+    upgrade-cost: 1500000
+  # The generator item
+  item:
+    material: TUBE_CORAL_BLOCK
+    display-name: "#2568FF&lTube Coral Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#2568FF&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f16"
+      - "&8Corruption Chance: &f4%"
+      - "&aUpgrade Cost: &a&n$1,500,000"
+      - "&cReparation Cost: &c&n$250,000"
+      - "&7"
+      - "#2568FF&lPossible Drops"
+      - "&7Tube Coral &8(value: &a$800&8)"
+      - "&7Condensed Tube Coral &8(value: &a$1600&8)"
+      - "&7Money &8(value: &a$2000&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 800 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: TUBE_CORAL_FAN
+        display-name: "#2568FF&lTube Coral &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 16"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$800"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 1600 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzlmYzNjZjU1MDhkNDBjMTQ2OTlkNWJmN2YyNTI3NTllMTk1NmFmOWE2NmQxNWE2YzM4NTQzNzhjNjFmNmQ5YSJ9fX0=
+        display-name: "&e&lCondensed Tube Coral &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 16"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$1600"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 2000"
+
+brain_coral_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FB45F9&lBrain Coral Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 625000 # The cost to fix the corruption
+    chance: 4.25 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: bubble_coral_generator
+    upgrade-cost: 2500000
+  # The generator item
+  item:
+    material: BRAIN_CORAL_BLOCK
+    display-name: "#FB45F9&lBrain Coral Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FB45F9&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f17"
+      - "&8Corruption Chance: &f4.25%"
+      - "&aUpgrade Cost: &a&n$2,500,000"
+      - "&cReparation Cost: &c&n$625,000"
+      - "&7"
+      - "#FB45F9&lPossible Drops"
+      - "&7Brain Coral &8(value: &a$1600&8)"
+      - "&7Condensed Brain Coral &8(value: &a$2000&8)"
+      - "&7Money &8(value: &a$2400&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 1600 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: BRAIN_CORAL_FAN
+        display-name: "#FB45F9&lBrain Coral &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 17"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$1600"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 2000 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU3ZGQ0M2U4ZjFjZDEzNzI2YzBmOTlhYzQwNDcxNTA0N2QxMmViNDJhMjhmZmM2YWU5YmZiM2I3MGQ3NjQwYSJ9fX0=
+        display-name: "#FB45F9&lCondensed Brain Coral &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 17"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$2000"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 2400"
+
+bubble_coral_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#A82AFF&lBubble Coral Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 1250000 # The cost to fix the corruption
+    chance: 4.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: fire_coral_generator
+    upgrade-cost: 5000000
+  # The generator item
+  item:
+    material: BUBBLE_CORAL_BLOCK
+    display-name: "#A82AFF&lBubble Coral Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#A82AFF&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f18"
+      - "&8Corruption Chance: &f4.5%"
+      - "&aUpgrade Cost: &a&n$5,000,000"
+      - "&cReparation Cost: &c&n$1,250,000"
+      - "&7"
+      - "#A82AFF&lPossible Drops"
+      - "&7Bubble Coral &8(value: &a$2000&8)"
+      - "&7Condensed Bubble Coral &8(value: &a$2400&8)"
+      - "&7Money &8(value: &a$2800&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 2000 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: BUBBLE_CORAL_FAN
+        display-name: "#A82AFF&lBubble Coral &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 18"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$2000"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 2400 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTNmMTgwNWVkY2QzMmI5N2FiMmYxOWEwM2JhYWIxZjhkNGRjNGRiOGVjN2EwMDRiMTRlYjY2NmQwOWZiODdmMiJ9fX0=
+        display-name: "#A82AFF&lCondensed Bubble Coral &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 18"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$2400"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 2800"
+
+fire_coral_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FB4242&lFire Coral Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 2500000 # The cost to fix the corruption
+    chance: 4.75 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: horn_coral_generator
+    upgrade-cost: 15000000
+  # The generator item
+  item:
+    material: FIRE_CORAL_BLOCK
+    display-name: "#FB4242&lFire Coral Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FB4242&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f19"
+      - "&8Corruption Chance: &f4.75%"
+      - "&aUpgrade Cost: &a&n$15,000,000"
+      - "&cReparation Cost: &c&n$2,500,000"
+      - "&7"
+      - "#FB4242&lPossible Drops"
+      - "&7Fire Coral &8(value: &a$2400&8)"
+      - "&7Condensed Fire Coral &8(value: &a$2800&8)"
+      - "&7Money &8(value: &a$3200&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 2400 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: FIRE_CORAL_FAN
+        display-name: "#FB4242&lFire Coral &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 19"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$2400"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 2800 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlOGRlZDNjNzRlYWNkNzg0MTJhOTAzYjkwNGY1NTc3ODUwZDFlMjBkMzQ4NzhmZDc3NTk3YWQxNjMzYmY3NCJ9fX0=
+        display-name: "#FB4242&lCondensed Fire Coral &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 19"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$2800"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 3200"
+
+horn_coral_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FBF945&lHorn Coral Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 6250000 # The cost to fix the corruption
+    chance: 5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: slime_generator
+    upgrade-cost: 25000000
+  # The generator item
+  item:
+    material: HORN_CORAL_BLOCK
+    display-name: "#FBF945&lHorn Coral Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FBF945&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f20"
+      - "&8Corruption Chance: &f5%"
+      - "&aUpgrade Cost: &a&n$25,000,000"
+      - "&cReparation Cost: &c&n$6,250,000"
+      - "&7"
+      - "#FBF945&lPossible Drops"
+      - "&7Horn Coral &8(value: &a$2800&8)"
+      - "&7Condensed Horn Coral &8(value: &a$3200&8)"
+      - "&7Money &8(value: &a$3600&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 2800 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: HORN_CORAL_FAN
+        display-name: "#FBF945&lHorn Coral &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 20"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$2800"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 3200 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ5MWI2ZTZhZTk0NTFjNDdlMDliZjFmZjIzZDUwZmZmODdiYTU5MjdhNTFmNDZmZmVkZjkyNmM1Y2JkZTc3ZiJ9fX0=
+        display-name: "#FBF945&lCondensed Horn Coral &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 20"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$3200"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 3600"
+
+slime_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#ACFB74&lSlime Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 12500000 # The cost to fix the corruption
+    chance: 5.25 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: honey_generator
+    upgrade-cost: 50000000
+  # The generator item
+  item:
+    material: SLIME_BLOCK
+    display-name: "#ACFB74&lSlime Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#ACFB74&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f21"
+      - "&8Corruption Chance: &f5.25%"
+      - "&aUpgrade Cost: &a&n$50,000,000"
+      - "&cReparation Cost: &c&n$12,500,000"
+      - "&7"
+      - "#ACFB74&lPossible Drops"
+      - "&7Slime &8(value: &a$3200&8)"
+      - "&7Condensed Slime &8(value: &a$3600&8)"
+      - "&7Money &8(value: &a$4000&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 3200 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: SLIME_BALL
+        display-name: "#ACFB74&lSlime &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 21"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$3200"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 40 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNmYmVhMjg3YjNhNjcyZWUzMjRjNzIwZTc3YWY4ZjczMGY4NTFkMjBkYWQ5ZmYxZmExYzA1MWVkZTViYzgxMyJ9fX0=
+        display-name: "#ACFB74&lCondensed Slime &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 21"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$3600"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 4000"
+
+honey_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FFC61B&lHoney Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 25000000 # The cost to fix the corruption
+    chance: 5.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: nethrite_generator
+    upgrade-cost: 50000000
+  # The generator item
+  item:
+    material: HONEY_BLOCK
+    display-name: "#FFC61B&lHoney Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#FFC61B&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f22"
+      - "&8Corruption Chance: &f5.5%"
+      - "&aUpgrade Cost: &a&n$50,000,000"
+      - "&cReparation Cost: &c&n$25,000,000"
+      - "&7"
+      - "#FFC61B&lPossible Drops"
+      - "&7Honey &8(value: &a$3600&8)"
+      - "&7Condensed Honey &8(value: &a$4000&8)"
+      - "&7Money &8(value: &a$4400&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 3600 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: HONEY_BOTTLE
+        display-name: "#FFC61B&lHoney &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 22"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$3600"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 4000 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGE3ZTBkNTVlYTgwNTE1Njk5NTVkYTEzODY5NzE3NGEwYmQ3NjE5MGIyZDU4Yjk5NzUwOTczN2RjZTVmYjYxZiJ9fX0=
+        display-name: "#FFC61B&lCondensed Honey &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 22"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$4000"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 4400"
+
+netherite_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#B77F44&lNethrite Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 5000 # The cost to fix the corruption
+    chance: 5.75 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: anchor_generator
+    upgrade-cost: 10000
+  # The generator item
+  item:
+    material: NETHERITE_BLOCK
+    display-name: "#B77F44&lNethrite Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#B77F44&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f23"
+      - "&8Corruption Chance: &f5.75%"
+      - "&aUpgrade Cost: &a&n$50,000,000"
+      - "&cReparation Cost: &c&n$50,000,000"
+      - "&7"
+      - "#B77F44&lPossible Drops"
+      - "&7Netherite &8(value: &a$4000&8)"
+      - "&7Condensed Netherite &8(value: &a$4400&8)"
+      - "&7Money &8(value: &a$4800&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 4000 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: NETHERITE_INGOT
+        display-name: "#B77F44&lNetherite &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 23"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$4000"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 4400 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQ4YjQ5ZThiYWZiMWZlZmI0OTUzOWJlNGU4MmNjN2UyYTI0NGJmMDQyODEzNGI5YTgwNTkxYTE3YzFhZTNjYiJ9fX0=
+        display-name: "#B77F44&lCondensed Netherite &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 23"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$4400"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 4800"
+
+anchor_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#742CFB&lAnchor Generator"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 5000 # The cost to fix the corruption
+    chance: 6 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: null
+    upgrade-cost: 10000
+  # The generator item
+  item:
+    material: RESPAWN_ANCHOR
+    display-name: "#742CFB&lAnchor Generator"
+    glowing: false
+    custom-model-data: 0
+    lore:
+      - "&8Purchasable Generator"
+      - "&7"
+      - "#742CFB&lINFO"
+      - "&8Time: &f20 seconds"
+      - "&8Generator Tier: &f24"
+      - "&8Corruption Chance: &f6%"
+      - "&aUpgrade Cost: &a&nUn-Upgradable"
+      - "&cReparation Cost: &c&n$50,000,000"
+      - "&7"
+      - "#742CFB&lPossible Drops"
+      - "&7Wither Rose &8(value: &a$4400&8)"
+      - "&7Condensed Wither Rose &8(value: &a$4800&8)"
+      - "&7Money &8(value: &a$5600&8)"
+      - "&7"
+      - "&7&oPlace down to activate the generator"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 60 # The chance that this drop will be chosen
+      sell-value: 4400 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: WITHER_ROSE
+        display-name: "#742CFB&lWither Rose &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 24"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$4400"
+          - "&7"
+          - "&e&lGENERATOR DROP!"
+    '1':
+      chance: 20 # The chance that this drop will be chosen
+      sell-value: 4800 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1YTA1OTkyYWZhMzdiMzgwNmI4MWYwMDAzY2E2MTdiM2MxY2JiOTE3MGEyMzA5MTE1YjljNmEwM2ViNzNhZiJ9fX0=
+        display-name: "#742CFB&lCondensed Wither Rose &a(/sell for money)"
+        glowing: false
+        custom-model-data: 0
+        lore:
+          - "&8Generator Drop Level 24"
+          - "&7"
+          - "&7Use &a/sell &7to sell this for &a&n$4800"
+          - "&7"
+          - "&e&lCONDENSED DROP!"
+    '2':
+      chance: 20 # The chance that this drop will be chosen
+      commands:
+        - "eco give {player} 5600"

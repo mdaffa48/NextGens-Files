@@ -1,0 +1,241 @@
+#
+#  ███╗░░██╗███████╗██╗░░██╗████████╗░██████╗░███████╗███╗░░██╗░██████╗
+#  ████╗░██║██╔════╝╚██╗██╔╝╚══██╔══╝██╔════╝░██╔════╝████╗░██║██╔════╝
+#  ██╔██╗██║█████╗░░░╚███╔╝░░░░██║░░░██║░░██╗░█████╗░░██╔██╗██║╚█████╗░
+#  ██║╚████║██╔══╝░░░██╔██╗░░░░██║░░░██║░░╚██╗██╔══╝░░██║╚████║░╚═══██╗
+#  ██║░╚███║███████╗██╔╝╚██╗░░░██║░░░╚██████╔╝███████╗██║░╚███║██████╔╝
+#  ╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚══════╝╚═╝░░╚══╝╚═════╝░
+#                           NextGens by aglerr
+#                    The future of gens tycoon plugin
+##############################################################################
+# We are aiming to be the #1 gens tycoon plugin on the market
+# We want to provide simple and rich configuration, so you can customize it the way you like
+# Don't hesitate to give suggestions or report bug reports on our discord server (link below)
+#
+# If you have any questions feel free to contact me on discord 'mdaffa' or
+# join our discord support server at https://discord.io/md-temple
+##############################################################################
+
+# Auto Save Option
+auto-save:
+  # Should we enable auto save?
+  enabled: true
+  # How often should we save the data (in seconds)
+  # It will be executed in async task
+  interval: 1800
+
+# Corruption System, check resource description on the market for details
+# tldr; if this option is enabled, generators will be broken occasionally
+#       and player need to fix the broken generator with money by
+#       shift + right-clicking the generator
+corruption:
+  enabled: true
+  interval: 180
+  # How many generators can possibly corrupt
+  # Default: 10 (If there are 100 generators, 10 of them will be randomly chosen and tested for corruption)
+  percentage: 10
+  # Broadcast when the corruption wave happen, leave empty to disable it
+  broadcast:
+    - '&7'
+    - '  &c&lPower Outages'
+    - '  &fDue to recent power outages, &c&n{amount}&f generators'
+    - '  &fhave been broken, please fix them immediately!'
+    - '  &7&o(( You will be notified if you got affected ))'
+    - '&7'
+  notify:
+    interval: 5
+    messages:
+      - '&7'
+      - '  &e&lGenerator Notification'
+      - '  &fThere are &e&n{amount}&f of your generator that''s broken'
+      - '  &ffind them and fix them by shift + right-clicking it.'
+      - '&7'
+  # Should we spawn hologram to indicate the generator is broken?
+  # Require: HolographicDisplays or DecentHolograms
+  hologram:
+    enabled: true
+    height: 1.85
+    lines:
+      - '&c&lBROKEN'
+      - '&7(Shift + Right Click)'
+  # List of generators that cannot be corrupted
+  blacklisted-generators:
+    - disabled_generator
+    - unbreakable_generator
+
+# Should we use permission to place specific generator?
+# The permission will be 'nextgens.generator.<id>'
+place-permission: false
+# Should generator can only work if the owner is online?
+online-only: true
+# Should we prevent generator from breaking because of explosion?
+anti-explosion: true
+# Should we prevent placing item dropped by generator?
+disable-drop-place: true
+# Should player need to crouch to pick up the generator?
+shift-pickup: false
+# Should we give back generators to the owner if the owner
+# disbanded, kicked, leave their island?
+# If this option is disabled, the generator will disappear instead.
+# Supported Plugins: SuperiorSkyblock2, BentoBox (see resource description for full info)
+island-pickup: true
+# Should we open up the upgrade gui if player tries to upgrade their gen?
+# Take a look at "gui/upgrade_gui.yml" to configure the upgrade gui
+upgrade-gui: true
+# Should we close shop gui after purchasing gen?
+close-on-purchase: false
+# Should we close shop gui if player doesn't have money to buy the gen?
+close-on-no-money: false
+# Should we drop the generator item on the ground upon breaking?
+drop-on-break: false
+# Should /pickupgens pickup broken generator?
+broken-pickup: true
+# Player will not be able to place generators on this world
+# and generators that are already on this world will not work
+blacklisted-worlds:
+  - disablegen
+  - notagenworld
+
+# Should we give generator to player who just joined the server?
+first-join-generator:
+  enabled: true
+  # The generator id that will be given
+  generator: wheat_generator
+  # The amount of generator
+  amount: 3
+  # List of commands that will be executed
+  commands:
+    - "eco give {player} 500"
+
+# List of options available for /sell commands
+sell-options:
+  # Should we hook into shopgui+?
+  # Meaning it will detect items that are sellable from shopgui+
+  hook_shopguiplus: true
+  # The title bar that will be sent upon selling
+  titles:
+    enabled: true
+    title: '&cSold {amount} Items'
+    sub-title: '&a${value}'
+  # Chat messages
+  messages:
+    enabled: true
+    message:
+      - '&6[NextGens] &fYou have sold &e{amount} &fitems and receive &a${value}'
+  # Action bar
+  action-bar:
+    enabled: true
+    message: '&6[NextGens] &aSold {amount} items for ${value}'
+  # Sound
+  sound:
+    enabled: true
+    name: ITEM_ARMOR_EQUIP_LEATHER
+    volume: 1.0
+    pitch: 1.0
+
+# List of options on generator place
+generator-place-options:
+  # Should we display particles upon placing generator?
+  particles: true
+  # Chat messages
+  messages:
+    enabled: true
+    message:
+      - '&6[NextGens] &aYou have placed {gen} &7({current}/{max})'
+  # Sound
+  sound:
+    enabled: true
+    name: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 2.0
+
+# List of options on generator break
+generator-break-options:
+  # Should we display particles upon breaking generator?
+  particles: true
+  # Chat messages
+  messages:
+    enabled: true
+    message:
+      - '&6[NextGens] &cYou have picked up {gen} &7({current}/{max})'
+  # Sound
+  sound:
+    enabled: true
+    name: ENTITY_ITEM_PICKUP
+    volume: 1.0
+    pitch: 1.0
+
+# List of options on generator upgrade
+generator-upgrade-options:
+  # Should we display particles upon upgrading generator?
+  particles: true
+  # Chat messages
+  messages:
+    enabled: true
+    message:
+      - '&6[NextGens] &aYou have upgrade your generator from {previous} to {current}'
+  # Sound
+  sound:
+    enabled: true
+    name: ENTITY_FIREWORK_ROCKET_BLAST
+    volume: 1.0
+    pitch: 1.0
+
+# List of options on corrupt fix
+corrupt-fix-options:
+  # Should we display particles upon fixing generator?
+  particles: true
+  # Chat messages
+  messages:
+    enabled: true
+    message:
+      - '&6[NextGens] &aYou have fixed your broken {gen} &afor ${cost}'
+  # Sound
+  sound:
+    enabled: true
+    name: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 2.0
+
+messages:
+  no-permission: '&6[NextGens] &cYou don''t have permission'
+  reload: '&6[NextGens] &aYou have reloaded the configuration!'
+  not-owner: '&6[NextGens] &cYou do not own this generator!'
+  no-upgrade: '&6[NextGens] &cThis generator cannot be upgraded anymore!'
+  not-enough-money: '&6[NextGens] &cYou don''t have enough money! (${money}/${upgradecost})'
+  max-gen: '&6[NextGens] &cYou can''t place more generator!'
+  target-not-found: '&6[NextGens] &cThat player is not online!'
+  not-int: '&6[NextGens] &cThe argument is not a number!'
+  invalid-gen: '&6[NextGens] &cThere is no generator with that id!'
+  give-gen: '&6[NextGens] &aYou give &e{amount}x {gen} &ato &e{player}'
+  receive-gen: '&6[NextGens] &aYou receive &e{amount}x {gen}&a!'
+  add-max: '&6[NextGens] &aYou have add &e{amount} &atotal gens place to &e{player}'
+  max-added: '&6[NextGens] &aYou can now place &e{amount} &amore generators &7({current}/{max})'
+  remove-max: '&6[NextGens] &aYou have removed &e{amount} &atotal gens from &e{player}'
+  max-removed: '&6[NextGens] &cYour max placed gens has been removed by &e{amount} &7({current}/{max})'
+  global-reset: '&6[NextGens] &aYou have reset bonus generators for all players!'
+  reset-max: '&6[NextGens] &aYou have reset &e{player} &agenerator bonus max'
+  max-resetted: '&6[NextGens] &cYour generators bonus max has been reset &7({current}/{max})'
+  no-sell: '&6[NextGens] &cYou don''t have anything to sell!'
+  no-permission-gen: '&6[NextGens] &cYou are not allowed to place this {gen}!'
+  invalid-world: '&6[NextGens] &cYou are not allowed to place generator here!'
+  gen-purchase: '&6[NextGens] &aYou have purchased {gen}'
+  pickup-broken: '&6[NextGens] &cYou cannot pickup a broken generator!'
+  global-repair: '&6[NextGens] &aYou have repaired all broken generators!'
+  player-repair: '&6[NextGens] &aYou have repaired all &e{player}''s &abroken generator'
+  gens-repaired: '&6[NextGens] &aAll of your broken generators have been repaired!'
+  pickup-gens: '&6[NextGens] &aYou have picked up &e{amount} &agenerators!'
+  force-pickup: '&6[NextGens] &aYou have forced pickup &e{amount} &agenerators for &e{player}'
+  player-pickup: '&6[NextGens] &aYour generators have been forced pickup! &7(Total: {amount})'
+  give-all: '&6[NextGens] &aYou have given everyone online &e{amount}x {gen}'
+  help:
+    - '&6&lNextGens &7- by aglerr'
+    - '&6/genshop [player] &7- open up the generator shop gui'
+    - '&6/pickupgens [player] &7- pickup all of specific player generators'
+    - '&6/sell [player] &7- sell player''s inventory contents'
+    - '&6/gens give <player> <generator> <amount> &7- give generator to player'
+    - '&6/gens giveall <generator> <amount> &7- give generator to online players'
+    - '&6/gens addmax/removemax <player> <amount> &7- add/remove bonus max generator'
+    - '&6/gens clearmax <player|all> &7- clear the bonus max generator'
+    - '&6/gens repair <player|all> &7- repair broken generator for specific players or globally'
+    - '&6/gens reload &7- reload the configuration'

@@ -1,0 +1,82 @@
+# The title of the gui
+title: "&8Upgrade Menu"
+# The size of the gui
+size: 27
+# The slots for the generator
+display-slots: [13]
+# Item that will be shown when player have enough money to upgrade the generator
+display-enough-money:
+  display-name: "&e&lInformation"
+  glowing: false
+  custom-model-data: 0
+  lore:
+    - "&f&m--------------------"
+    - "&8Current Generator: {current}"
+    - "&8Speed: &f{speed}s"
+    - "&8Corruption chance: &f{corruption}%"
+    - "&8Repair cost: &a${repair}"
+    - "&f&m--------------------"
+    - "&8Next Generator: {next}"
+    - "&8Speed: &f{next_speed}s"
+    - "&8Corruption chance: &f{next_corruption}%"
+    - "&8Repair cost: &a${next_repair}"
+    - "&f&m--------------------"
+    - "&8Upgrade Cost: &a${cost}"
+    - "&8You have: &a${balance}"
+    - "&7"
+    - "&a> Click to upgrade <"
+
+# Item that will be shown when player doesn't have enough money to upgrade the generator
+display-no-money:
+  display-name: "&c&lInformation"
+  glowing: false
+  custom-model-data: 0
+  lore:
+    - "&f&m--------------------"
+    - "&8Current Generator: {current}"
+    - "&8Speed: &f{speed}s"
+    - "&8Corruption chance: &f{corruption}%"
+    - "&8Repair cost: &a${repair}"
+    - "&f&m--------------------"
+    - "&8Next Generator: {next}"
+    - "&8Speed: &f{next_speed}s"
+    - "&8Corruption chance: &f{next_corruption}%"
+    - "&8Repair cost: &a${next_repair}"
+    - "&f&m--------------------"
+    - "&8Upgrade Cost: &a${cost}"
+    - "&8You have: &a${balance}"
+    - "&7"
+    - "&c> You cannot afford <"
+
+# Item that will be shown if generator has no upgrades
+no-upgrade-button:
+  material: BARRIER
+  display-name: "&cNo Upgrades"
+  glowing: false
+  custom-model-data: 0
+  lore:
+    - "&7"
+    - "&7This generator cannot be upgraded anymore!"
+    - "&7"
+    - "&7Get more generators in &f&n/genshop!"
+    - "&7"
+
+# The slots for confirm button
+confirm-slots: [4, 5, 6, 7, 8, 14, 15, 16, 17, 23, 24, 25, 26]
+# The confirm button item
+confirm-button:
+  material: LIME_STAINED_GLASS_PANE
+  display-name: "&aConfirm"
+  glowing: false
+  custom-model-data: 0
+  lore: []
+
+# The slots for cancel button
+cancel-slots: [0, 1, 2, 3, 9, 10, 11, 12, 18, 19, 20, 21, 22]
+# The cancel button item
+cancel-button:
+  material: RED_STAINED_GLASS_PANE
+  display-name: "&cCancel"
+  glowing: false
+  custom-model-data: 0
+  lore: []
