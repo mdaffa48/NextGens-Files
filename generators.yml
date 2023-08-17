@@ -22,7 +22,14 @@ wheat_generator:
   item:
     material: HAY_BLOCK
     display-name: "#D8A073&lWheat Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -50,7 +57,14 @@ wheat_generator:
       item:
         material: WHEAT
         display-name: "&e&lWheat &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 1"
@@ -65,7 +79,14 @@ wheat_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg2YmFkYjBkOTEzYjM5MWZiNDhkNzc3NmMzNzhjYTNmNGIyZGJlNzI0NTM0MDM0ZjM1MGNjZDM4ZjkwNDQ3MyJ9fX0=
         display-name: "#D8A073&lCondensed Wheat &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 1"
@@ -101,7 +122,14 @@ melon_generator:
   item:
     material: MELON
     display-name: "#2CD842&lMelon Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -129,7 +157,14 @@ melon_generator:
       item:
         material: MELON_SLICE
         display-name: "#2CD842&lMelon &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 2"
@@ -144,7 +179,14 @@ melon_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVhODkwM2EzNWU0MGIyODczOTk1NjVhMGU5YTdiZGE1ZmM1NjA2YmUyMWMxOTZmM2IyYjAzNWQxNTZhMWEwZCJ9fX0=
         display-name: "#2CD842&lCondensed Melon &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 2"
@@ -180,7 +222,14 @@ pumpkin_generator:
   item:
     material: PUMPKIN
     display-name: "#FB913B&lPumpkin Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -208,7 +257,14 @@ pumpkin_generator:
       item:
         material: PUMPKIN_PIE
         display-name: "#FB913B&lPumpkin &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 3"
@@ -223,7 +279,14 @@ pumpkin_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg2YmFkYjBkOTEzYjM5MWZiNDhkNzc3NmMzNzhjYTNmNGIyZGJlNzI0NTM0MDM0ZjM1MGNjZDM4ZjkwNDQ3MyJ9fX0=
         display-name: "#FB913B&lCondensed Pumpkin &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 3"
@@ -259,7 +322,14 @@ coal_generator:
   item:
     material: COAL_BLOCK
     display-name: "#726365&lCoal Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -287,7 +357,14 @@ coal_generator:
       item:
         material: COAL
         display-name: "#726365&lCoal &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 4"
@@ -302,7 +379,14 @@ coal_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTY3YjQ3ZmJkMzdjNmQ5ZDhkMjJkOTczZTcyOTBlODA4NTJlOTI2NmEwNzZmYjdhYjIxNWFmZTkxYjgxZWQ2YyJ9fX0=
         display-name: "#726365&lCondensed Coal &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 4"
@@ -338,7 +422,14 @@ iron_generator:
   item:
     material: IRON_BLOCK
     display-name: "#FFDFE2&lIron Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -366,7 +457,14 @@ iron_generator:
       item:
         material: IRON_INGOT
         display-name: "#FFDFE2&lIron &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 5"
@@ -381,7 +479,14 @@ iron_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFhNzg1OTE2ZDJkMTdjYTBlYTJhZDIzZDgwMjQ3YzdjNTAyMTQ0MzkwM2JiYWI3YjI0Yjc5MzRiNmEzNjFhYiJ9fX0=
         display-name: "#FFDFE2&lCondensed Iron &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 5"
@@ -417,7 +522,14 @@ gold_generator:
   item:
     material: GOLD_BLOCK
     display-name: "#FBBE06&lGold Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -445,7 +557,14 @@ gold_generator:
       item:
         material: GOLD_INGOT
         display-name: "&e&lGold &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 6"
@@ -460,7 +579,14 @@ gold_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdmNTdlN2FhOGRlODY1OTFiYjBiYzUyY2JhMzBhNDlkOTMxYmZhYmJkNDdiYmM4MGJkZDY2MjI1MTM5MjE2MSJ9fX0=
         display-name: "#FBBE06&lCondensed Gold &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 6"
@@ -496,7 +622,14 @@ redstone_generator:
   item:
     material: REDSTONE_BLOCK
     display-name: "#FB2727&lRedstone Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -524,7 +657,14 @@ redstone_generator:
       item:
         material: REDSTONE
         display-name: "#FB2727&lRedstone &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 7"
@@ -539,7 +679,14 @@ redstone_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmI3OGZhNWRlZmU3MmRlYmNkOWM3NmFiOWY0ZTExNDI1MDQ3OWJiOWI0NGY0Mjg4N2JiZjZmNzM4NjEyYiJ9fX0=
         display-name: "#FB2727&lCondensed Redstone &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 7"
@@ -575,7 +722,14 @@ lapis_generator:
   item:
     material: LAPIS_BLOCK
     display-name: "#4042FB&lLapis Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -603,7 +757,14 @@ lapis_generator:
       item:
         material: LAPIS_LAZULI
         display-name: "#4042FB&lLapis &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 8"
@@ -618,7 +779,14 @@ lapis_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjljMTQ5Mzc5YmZmMzcxNGYwYTE0NmE0OTc1YTkyMzE1NmUxZDU1NjMyOGVkYjg5MjEzNTE4MmJhM2FhM2M4MyJ9fX0=
         display-name: "#4042FB&lCondensed Lapis &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 8"
@@ -654,7 +822,14 @@ diamond_generator:
   item:
     material: DIAMOND_BLOCK
     display-name: "#4FF6FB&lDiamond Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -682,7 +857,14 @@ diamond_generator:
       item:
         material: DIAMOND
         display-name: "#4FF6FB&lDiamond &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 9"
@@ -697,7 +879,14 @@ diamond_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjljMTQ5Mzc5YmZmMzcxNGYwYTE0NmE0OTc1YTkyMzE1NmUxZDU1NjMyOGVkYjg5MjEzNTE4MmJhM2FhM2M4MyJ9fX0=
         display-name: "#4FF6FB&lCondensed Diamond &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 9"
@@ -733,7 +922,14 @@ emerald_generator:
   item:
     material: EMERALD_BLOCK
     display-name: "#74FB3D&lEmerald Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -761,7 +957,14 @@ emerald_generator:
       item:
         material: EMERALD
         display-name: "#74FB3D&lEmerald &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 10"
@@ -776,7 +979,14 @@ emerald_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmMwZTZkOWUyNDI3MzU0ODE5MThjNWZkMTQ0OThiZDc2MGJiOWY0ZmY2NDMwYWQ0Njk2YjM4ZThhODgzZGE5NyJ9fX0=
         display-name: "#74FB3D&lCondensed Emerald &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 10"
@@ -812,7 +1022,14 @@ quartz_generator:
   item:
     material: QUARTZ_BLOCK
     display-name: "#F7FBB1&lQuartz Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -840,7 +1057,14 @@ quartz_generator:
       item:
         material: QUARTZ
         display-name: "#F7FBB1&lQuartz &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 11"
@@ -855,7 +1079,14 @@ quartz_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNiNTAwMWE2NzAwN2E5M2FkZTY2NTkxNzVlOTA1NGE5Mjk3NmIwODdmYzYyOWYwNDJiY2Q1N2U3NzU3NjQ2YSJ9fX0=
         display-name: "#F7FBB1&lCondensed Quartz &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 11"
@@ -891,7 +1122,14 @@ gold_nugget_generator:
   item:
     material: NETHER_GOLD_ORE
     display-name: "#FBC379&lGold Nugget Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -919,7 +1157,14 @@ gold_nugget_generator:
       item:
         material: GOLD_NUGGET
         display-name: "#FBC379&lGold Nugget &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 12"
@@ -934,7 +1179,14 @@ gold_nugget_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmViNDM1N2VkYWU0MjlmYmFkOTVmMzI4MTI2MjVjNjExMmNmMTdhZDk2NDZhNmU4ZTdlMDM2NjZlYjk1NGFjOCJ9fX0=
         display-name: "&e&lCondensed Gold Nugget &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 12"
@@ -970,7 +1222,14 @@ sea_lantern_generator:
   item:
     material: SEA_LANTERN
     display-name: "#9DF6FF&lSea Lantern Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -998,7 +1257,14 @@ sea_lantern_generator:
       item:
         material: PRISMARINE_CRYSTALS
         display-name: "#9DF6FF&lSea Lantern &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 13"
@@ -1013,7 +1279,14 @@ sea_lantern_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2I1ZjNhOGE3YTUzMzhmZjhjMDFiZGQ0ZjViM2E1Y2FmNTQ5OWY0YzA0ZTg0ZTQyMzBkMDNmNDRjMzUyNWQ2ZCJ9fX0=
         display-name: "&e&lCondensed Wheat &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 13"
@@ -1049,7 +1322,14 @@ magma_generator:
   item:
     material: MAGMA_BLOCK
     display-name: "#FF4D0B&lMagma Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -1077,7 +1357,14 @@ magma_generator:
       item:
         material: MAGMA_CREAM
         display-name: "#FF4D0B&lMagma &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 14"
@@ -1092,7 +1379,14 @@ magma_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzIxZDA5MzBiZDYxZmVhNGNiOTAyN2IwMGU5NGUxM2Q2MjAyOWM1MjRlYTBiMzI2MGM3NDc0NTdiYTFiY2ZhMSJ9fX0=
         display-name: "#FF4D0B&lCondensed Magma &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 14"
@@ -1128,7 +1422,14 @@ glowstone_generator:
   item:
     material: GLOWSTONE
     display-name: "#FBC831&lGlowstone Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -1156,7 +1457,14 @@ glowstone_generator:
       item:
         material: GLOWSTONE_DUST
         display-name: "#FBC831&lGlowstone &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 15"
@@ -1171,7 +1479,14 @@ glowstone_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTU1YzdlOTk3NDk4YmRjM2I5YmU0MzhlZDgyN2E5NGUzZTcyMThhMzE4NTU4MDQwMDY3ODg1MzhlYjdmMDNmYSJ9fX0=
         display-name: "&e&lCondensed Glowstone &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 15"
@@ -1207,7 +1522,14 @@ tube_coral_generator:
   item:
     material: TUBE_CORAL_BLOCK
     display-name: "#2568FF&lTube Coral Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -1235,7 +1557,14 @@ tube_coral_generator:
       item:
         material: TUBE_CORAL_FAN
         display-name: "#2568FF&lTube Coral &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 16"
@@ -1250,7 +1579,14 @@ tube_coral_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzlmYzNjZjU1MDhkNDBjMTQ2OTlkNWJmN2YyNTI3NTllMTk1NmFmOWE2NmQxNWE2YzM4NTQzNzhjNjFmNmQ5YSJ9fX0=
         display-name: "&e&lCondensed Tube Coral &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 16"
@@ -1286,7 +1622,14 @@ brain_coral_generator:
   item:
     material: BRAIN_CORAL_BLOCK
     display-name: "#FB45F9&lBrain Coral Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -1314,7 +1657,14 @@ brain_coral_generator:
       item:
         material: BRAIN_CORAL_FAN
         display-name: "#FB45F9&lBrain Coral &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 17"
@@ -1329,7 +1679,14 @@ brain_coral_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU3ZGQ0M2U4ZjFjZDEzNzI2YzBmOTlhYzQwNDcxNTA0N2QxMmViNDJhMjhmZmM2YWU5YmZiM2I3MGQ3NjQwYSJ9fX0=
         display-name: "#FB45F9&lCondensed Brain Coral &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 17"
@@ -1365,7 +1722,14 @@ bubble_coral_generator:
   item:
     material: BUBBLE_CORAL_BLOCK
     display-name: "#A82AFF&lBubble Coral Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -1393,7 +1757,14 @@ bubble_coral_generator:
       item:
         material: BUBBLE_CORAL_FAN
         display-name: "#A82AFF&lBubble Coral &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 18"
@@ -1408,7 +1779,14 @@ bubble_coral_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTNmMTgwNWVkY2QzMmI5N2FiMmYxOWEwM2JhYWIxZjhkNGRjNGRiOGVjN2EwMDRiMTRlYjY2NmQwOWZiODdmMiJ9fX0=
         display-name: "#A82AFF&lCondensed Bubble Coral &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 18"
@@ -1444,7 +1822,14 @@ fire_coral_generator:
   item:
     material: FIRE_CORAL_BLOCK
     display-name: "#FB4242&lFire Coral Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -1472,7 +1857,14 @@ fire_coral_generator:
       item:
         material: FIRE_CORAL_FAN
         display-name: "#FB4242&lFire Coral &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 19"
@@ -1487,7 +1879,14 @@ fire_coral_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlOGRlZDNjNzRlYWNkNzg0MTJhOTAzYjkwNGY1NTc3ODUwZDFlMjBkMzQ4NzhmZDc3NTk3YWQxNjMzYmY3NCJ9fX0=
         display-name: "#FB4242&lCondensed Fire Coral &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 19"
@@ -1523,7 +1922,14 @@ horn_coral_generator:
   item:
     material: HORN_CORAL_BLOCK
     display-name: "#FBF945&lHorn Coral Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -1551,7 +1957,14 @@ horn_coral_generator:
       item:
         material: HORN_CORAL_FAN
         display-name: "#FBF945&lHorn Coral &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 20"
@@ -1566,7 +1979,14 @@ horn_coral_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ5MWI2ZTZhZTk0NTFjNDdlMDliZjFmZjIzZDUwZmZmODdiYTU5MjdhNTFmNDZmZmVkZjkyNmM1Y2JkZTc3ZiJ9fX0=
         display-name: "#FBF945&lCondensed Horn Coral &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 20"
@@ -1602,7 +2022,14 @@ slime_generator:
   item:
     material: SLIME_BLOCK
     display-name: "#ACFB74&lSlime Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -1630,7 +2057,14 @@ slime_generator:
       item:
         material: SLIME_BALL
         display-name: "#ACFB74&lSlime &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 21"
@@ -1645,7 +2079,14 @@ slime_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNmYmVhMjg3YjNhNjcyZWUzMjRjNzIwZTc3YWY4ZjczMGY4NTFkMjBkYWQ5ZmYxZmExYzA1MWVkZTViYzgxMyJ9fX0=
         display-name: "#ACFB74&lCondensed Slime &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 21"
@@ -1681,7 +2122,14 @@ honey_generator:
   item:
     material: HONEY_BLOCK
     display-name: "#FFC61B&lHoney Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -1709,7 +2157,14 @@ honey_generator:
       item:
         material: HONEY_BOTTLE
         display-name: "#FFC61B&lHoney &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 22"
@@ -1724,7 +2179,14 @@ honey_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGE3ZTBkNTVlYTgwNTE1Njk5NTVkYTEzODY5NzE3NGEwYmQ3NjE5MGIyZDU4Yjk5NzUwOTczN2RjZTVmYjYxZiJ9fX0=
         display-name: "#FFC61B&lCondensed Honey &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 22"
@@ -1760,7 +2222,14 @@ netherite_generator:
   item:
     material: NETHERITE_BLOCK
     display-name: "#B77F44&lNethrite Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -1788,7 +2257,14 @@ netherite_generator:
       item:
         material: NETHERITE_INGOT
         display-name: "#B77F44&lNetherite &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 23"
@@ -1803,7 +2279,14 @@ netherite_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQ4YjQ5ZThiYWZiMWZlZmI0OTUzOWJlNGU4MmNjN2UyYTI0NGJmMDQyODEzNGI5YTgwNTkxYTE3YzFhZTNjYiJ9fX0=
         display-name: "#B77F44&lCondensed Netherite &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 23"
@@ -1839,7 +2322,14 @@ anchor_generator:
   item:
     material: RESPAWN_ANCHOR
     display-name: "#742CFB&lAnchor Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -1867,7 +2357,14 @@ anchor_generator:
       item:
         material: WITHER_ROSE
         display-name: "#742CFB&lWither Rose &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 24"
@@ -1882,7 +2379,14 @@ anchor_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1YTA1OTkyYWZhMzdiMzgwNmI4MWYwMDAzY2E2MTdiM2MxY2JiOTE3MGEyMzA5MTE1YjljNmEwM2ViNzNhZiJ9fX0=
         display-name: "#742CFB&lCondensed Wither Rose &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 24"

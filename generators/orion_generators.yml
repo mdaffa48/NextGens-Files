@@ -21,7 +21,14 @@ omega_generator:
   item:
     material: REINFORCED_DEEPSLATE
     display-name: "#5DB6FF&lOmega Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -49,7 +56,14 @@ omega_generator:
       item:
         material: NETHER_STAR
         display-name: "#5DB6FF&lNether Star &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 25"
@@ -64,7 +78,14 @@ omega_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTdjNjZmNWE0YjQwODAwNWIzMzZkYTY2NzZlOGY2YTJhNjdlZWEzMTVmYjdlOTEzNjBhY2MwNDc4MDJmYTMyMCJ9fX0=
         display-name: "#5DB6FF&lCondensed Nether Star &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 25"
@@ -100,7 +121,14 @@ space_generator:
   item:
     material: SCULK_CATALYST
     display-name: "#0E1FFF&lSpace Generator"
-    glowing: false
+    # Enchantment Format:
+    # <ENCHANT>;<LEVEL>
+    # Example: DURABILITY;1
+    enchantments: [ ]
+    # Item Flag Example:
+    # - HIDE_ATTRIBUTES
+    # - HIDE_ENCHANTS
+    flags: [ ]
     custom-model-data: 0
     lore:
       - "&8Purchasable Generator"
@@ -128,7 +156,14 @@ space_generator:
       item:
         material: NETHER_STAR
         display-name: "#0E1FFF&lSpace Shard &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 26"
@@ -143,7 +178,14 @@ space_generator:
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM4YzljMTAxM2NlNzQ5MTE1MTc0NGQzZTYyOTYyN2UxNjk5MWZhYTY2ZTk0NDAwNzRmY2ZiYWVmMGE4ZmM4OCJ9fX0=
         display-name: "#0E1FFF&lCondensed Space Shard &a(/sell for money)"
-        glowing: false
+        # Enchantment Format:
+        # <ENCHANT>;<LEVEL>
+        # Example: DURABILITY;1
+        enchantments: [ ]
+        # Item Flag Example:
+        # - HIDE_ATTRIBUTES
+        # - HIDE_ENCHANTS
+        flags: [ ]
         custom-model-data: 0
         lore:
           - "&8Generator Drop Level 26"

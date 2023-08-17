@@ -1,0 +1,248 @@
+# Gens Events
+# You can create as many events as you want, configure the timer and wait time for each event
+events:
+  enabled: true
+  # Should we choose random event instead of start it by order
+  random: false
+  # The wait time for each event (in minutes)
+  wait-time: 900
+  # The placeholders that will be used
+  placeholders:
+    no-event: "&7ɴᴇxᴛ ᴇᴠᴇɴᴛ"
+    no-event-timer: "&7ᴇᴠᴇɴᴛ ɪɴ: &f{timer}"
+    active-event: "{display_name}"
+    active-event-timer: "&7ᴛɪᴍᴇ ʟᴇғᴛ: &f{timer}"
+  # List of events
+  # Type: sell_multiplier, generator_upgrade, generator_speed, drop_multiplier, mixed_up
+  # Please follow the current format, each event type will have its own unique value
+  events:
+    '2x_sell':
+      type: sell_multiplier
+      # The display name of the event
+      display-name: "&a&l2x Sell Multiplier"
+      # The multiplier of the sell
+      multiplier: 2.00
+      # The duration of the event (in minutes)
+      duration: 120
+      # The start message
+      start-message:
+        - "&7"
+        - "  &a&l2x Sell Multiplier Event has started!"
+        - "  &7The value of every items that are sellable now"
+        - "  &7has been increased by 2x &7(( /sell ))"
+        - "&7"
+      # The end message
+      end-message:
+        - "&7"
+        - "  &c&l2x Sell Multiplier Event has ended!"
+        - "  &7Now the value of sellable items go back to normal."
+        - "&7"
+      # Blacklisted generator that will not affected by this event
+      blacklisted_generators:
+        - "disabled_generator_id"
+    '1x_upgrade':
+      type: generator_upgrade
+      # The display name of the event
+      display-name: "&b&l1x Generator Upgrade"
+      # How many tier should the generator be upgraded
+      tier-amount: 1
+      # The duration of the event (in minutes)
+      duration: 180
+      # The start message
+      start-message:
+        - "&7"
+        - "  &a&l1x Generator Upgrade Event has started!"
+        - "  &7Now every generator will generate drop"
+        - "  &7one tier above the current tier."
+        - "&7"
+      # The end message
+      end-message:
+        - "&7"
+        - "  &c&l1x Generator Upgrade Event has ended!"
+        - "  &7Now every generator back to normal."
+        - "&7"
+      # Blacklisted generator that will not affected by this event
+      blacklisted_generators:
+        - "disabled_generator_id"
+    '2x_speed':
+      type: generator_speed
+      # The display name of the event
+      display-name: "&c&l2x Generator Speed"
+      # How much percentage should we reduce the drop interval
+      percentage: 50
+      # The duration of the event (in minutes)
+      duration: 180
+      # The start message
+      start-message:
+        - "&7"
+        - "  &a&l2x Generator Speed Event has started!"
+        - "  &7Now every generator will generate drop 2x faster"
+        - "&7"
+      # The end message
+      end-message:
+        - "&7"
+        - "  &c&l2x Generator Speed Event has ended!"
+        - "  &7Now every generator back to normal."
+        - "&7"
+      # Blacklisted generator that will not affected by this event
+      blacklisted_generators:
+        - "disabled_generator_id"
+    '2x_drop':
+      type: drop_multiplier
+      # The display name of the event
+      display-name: "&d&l2x Drop Multiplier"
+      # How many drop should we execute on every generator?
+      drop-amount: 2
+      # The duration of the event (in minutes)
+      duration: 180
+      # The start message
+      start-message:
+        - "&7"
+        - "  &a&l2x Drop Multiplier Event has started!"
+        - "  &7Now every generator will generate drop 2x more!"
+        - "&7"
+      # The end message
+      end-message:
+        - "&7"
+        - "  &c&l2x Drop Multiplier Event has ended!"
+        - "  &7Now every generator back to normal."
+        - "&7"
+      # Blacklisted generator that will not affected by this event
+      blacklisted_generators:
+        - "disabled_generator_id"
+    '3m_mixed_up':
+      type: mixed_up
+      # The display name of the event
+      display-name: "&6&lMixed &e&lUp"
+      # The duration of the event (in minutes)
+      duration: 180
+      # The start message
+      start-message:
+        - "&7"
+        - "  &a&lMixed Up Event has started!"
+        - "  &7Now every generator will generate drop from random generator!"
+        - "&7"
+      # The end message
+      end-message:
+        - "&7"
+        - "  &c&lMixed Up Event has ended!"
+        - "  &7Now every generator back to normal."
+        - "&7"
+      # Blacklisted generator that will not affected by this event
+      blacklisted_generators:
+        - "disabled_generator_id"
+    '1_5x_sell':
+      type: sell_multiplier
+      # The display name of the event
+      display-name: "&a&l1.5x Sell Multiplier"
+      # The multiplier of the sell
+      multiplier: 1.5
+      # The duration of the event (in minutes)
+      duration: 180
+      # The start message
+      start-message:
+        - "&7"
+        - "  &a&l1,5x Sell Multiplier Event has started!"
+        - "  &7The value of every items that are sellable now"
+        - "  &7has been increased by 1.5x &7(( /sell ))"
+        - "&7"
+      # The end message
+      end-message:
+        - "&7"
+        - "  &c&l1.5x Sell Multiplier Event has ended!"
+        - "  &7Now the value of sellable items go back to normal."
+        - "&7"
+      # Blacklisted generator that will not affected by this event
+      blacklisted_generators:
+        - "disabled_generator_id"
+    '2x_upgrade':
+      type: generator_upgrade
+      # The display name of the event
+      display-name: "&b&l2x Generator Upgrade"
+      # How many tier should the generator be upgraded
+      tier-amount: 2
+      # The duration of the event (in minutes)
+      duration: 60
+      # The start message
+      start-message:
+        - "&7"
+        - "  &a&l2x Generator Upgrade Event has started!"
+        - "  &7Now every generator will generate drop"
+        - "  &7two tier above the current tier."
+        - "&7"
+      # The end message
+      end-message:
+        - "&7"
+        - "  &c&l2x Generator Upgrade Event has ended!"
+        - "  &7Now every generator back to normal."
+        - "&7"
+      # Blacklisted generator that will not affected by this event
+      blacklisted_generators:
+        - "disabled_generator_id"
+    '1_5x_speed':
+      type: generator_speed
+      # The display name of the event
+      display-name: "&c&l1.5x Generator Speed"
+      # How much percentage should we reduce the drop interval
+      percentage: 25
+      # The duration of the event (in minutes)
+      duration: 300
+      # The start message
+      start-message:
+        - "&7"
+        - "  &a&l1.5x Generator Speed Event has started!"
+        - "  &7Now every generator will generate drop 1.5x faster"
+        - "&7"
+      # The end message
+      end-message:
+        - "&7"
+        - "  &c&l1.5x Generator Speed Event has ended!"
+        - "  &7Now every generator back to normal."
+        - "&7"
+      # Blacklisted generator that will not affected by this event
+      blacklisted_generators:
+        - "disabled_generator_id"
+    '3x_drop':
+      type: drop_multiplier
+      # The display name of the event
+      display-name: "&d&l3x Drop Multiplier"
+      # How many drop should we execute on every generator?
+      drop-amount: 3
+      # The duration of the event (in minutes)
+      duration: 60
+      # The start message
+      start-message:
+        - "&7"
+        - "  &a&l3x Drop Multiplier Event has started!"
+        - "  &7Now every generator will generate drop 3x more!"
+        - "&7"
+      # The end message
+      end-message:
+        - "&7"
+        - "  &c&l3x Drop Multiplier Event has ended!"
+        - "  &7Now every generator back to normal."
+        - "&7"
+      # Blacklisted generator that will not affected by this event
+      blacklisted_generators:
+        - "disabled_generator_id"
+    '5m_mixed_up':
+      type: mixed_up
+      # The display name of the event
+      display-name: "&6&lMixed &e&lUp"
+      # The duration of the event (in minutes)
+      duration: 300
+      # The start message
+      start-message:
+        - "&7"
+        - "  &a&lMixed Up Event has started!"
+        - "  &7Now every generator will generate drop from random generator!"
+        - "&7"
+      # The end message
+      end-message:
+        - "&7"
+        - "  &c&lMixed Up Event has ended!"
+        - "  &7Now every generator back to normal."
+        - "&7"
+      # Blacklisted generator that will not affected by this event
+      blacklisted_generators:
+        - "disabled_generator_id"
