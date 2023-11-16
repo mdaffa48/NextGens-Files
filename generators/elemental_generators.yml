@@ -43,7 +43,6 @@ snow_generator:
       - "#81FFFB&lPossible Drops"
       - "&7Snow &8(value: &a$4800&8)"
       - "&7Condensed Snow &8(value: &a$5600&8)"
-      - "&7Money &8(value: &a$6000&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -93,10 +92,6 @@ snow_generator:
           - "&7Use &a/sell &7to sell this for &a&n$6000"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 6500"
 
 earth_generator:
   # The display name of the generator that will be used across messages
@@ -143,7 +138,6 @@ earth_generator:
       - "#935828&lPossible Drops"
       - "&7Nether Star &8(value: &a$4800&8)"
       - "&7Condensed Nether star &8(value: &a$5600&8)"
-      - "&7Money &8(value: &a$6000&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -193,7 +187,3 @@ earth_generator:
           - "&7Use &a/sell &7to sell this for &a&n$6500"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 7000"

@@ -1,0 +1,55 @@
+title: "&8Player Settings"
+size: 27
+
+# Text that will be shown if the setting is on
+placeholder-on: "&aOn"
+# Text that will be shown if the setting is off
+placeholder-off: "&cOff"
+
+# The List of items that will be shown in the gui
+# Keep in mind that you can add as many items as you want
+items:
+  cashback:
+    type: toggle_cashback
+    material: EMERALD
+    display-name: "&6Cashback Notification"
+    slots: [ 11 ]
+    lore:
+      - "&7Turning this on will sell resources"
+      - "&7inside your inventory automatically"
+      - "&7"
+      - "  &6* &7Status: {status_cashback}"
+      - "&7"
+      - "&aClick to toggle this setting!"
+  autosell_inventory:
+    type: toggle_inventory_autosell
+    material: CHEST
+    display-name: "&6Inventory Autosell"
+    slots: [ 13 ]
+    lore:
+      - "&7Turning this on will sell resources"
+      - "&7inside your inventory automatically"
+      - "&7"
+      - "  &6* &7Status: {status_inventory_autosell}"
+      - "  &c* You need special permission to use this setting!"
+      - "&7"
+      - "&aClick to toggle this setting!"
+  autosell_gens:
+    type: toggle_gens_autosell
+    material: HAY_BLOCK
+    display-name: "&6Gens Autosell"
+    slots: [ 15 ]
+    lore:
+      - "&7Turning this on will sell resources"
+      - "&7spawned by your generator automatically"
+      - "&7"
+      - "  &6* &7Status: {status_gens_autosell}"
+      - "  &c* You need special permission to use this setting!"
+      - "&7"
+      - "&aClick to toggle this setting!"
+  filler_item:
+    type: DUMMY
+    material: BLACK_STAINED_GLASS_PANE
+    display-name: "&7"
+    slots: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ]
+    lore: []

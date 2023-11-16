@@ -1,0 +1,16 @@
+material-worth:
+  stone: 50
+  oak_wood: 50
+  carrot: 10
+
+# You can add as many custom items as you want
+custom-item-worth:
+  random-unique-id:
+    price: 5
+    material: WHEAT
+    display-name: "&e&lWheat"
+    custom-model-data: 0
+    flags: []
+    enchantments: []
+    lore:
+      - "&8Farming Item"

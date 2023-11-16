@@ -44,7 +44,6 @@ wheat_generator:
       - "#D8A073&lPossible Drops"
       - "&7Wheat &8(value: &a$8&8)"
       - "&7Condensed Wheat &8(value: &a16&8)"
-      - "&7Money &8(value: &a$20&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -53,7 +52,7 @@ wheat_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 8 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: WHEAT
         display-name: "&e&lWheat &a(/sell for money)"
@@ -75,7 +74,7 @@ wheat_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 16 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg2YmFkYjBkOTEzYjM5MWZiNDhkNzc3NmMzNzhjYTNmNGIyZGJlNzI0NTM0MDM0ZjM1MGNjZDM4ZjkwNDQ3MyJ9fX0=
         display-name: "#D8A073&lCondensed Wheat &a(/sell for money)"
@@ -94,10 +93,6 @@ wheat_generator:
           - "&7Use &a/sell &7to sell this for &a&n$16"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 20"
 
 melon_generator:
   # The display name of the generator that will be used across messages
@@ -144,7 +139,6 @@ melon_generator:
       - "#2CD842&lPossible Drops"
       - "&7Melon &8(value: &a$16&8)"
       - "&7Condensed Melon &8(value: &a$20&8)"
-      - "&7Money &8(value: &a$40&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -153,7 +147,7 @@ melon_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 16 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: MELON_SLICE
         display-name: "#2CD842&lMelon &a(/sell for money)"
@@ -175,7 +169,7 @@ melon_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 32 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVhODkwM2EzNWU0MGIyODczOTk1NjVhMGU5YTdiZGE1ZmM1NjA2YmUyMWMxOTZmM2IyYjAzNWQxNTZhMWEwZCJ9fX0=
         display-name: "#2CD842&lCondensed Melon &a(/sell for money)"
@@ -194,10 +188,6 @@ melon_generator:
           - "&7Use &a/sell &7to sell this for &a&n$20"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 40"
 
 pumpkin_generator:
   # The display name of the generator that will be used across messages
@@ -244,7 +234,6 @@ pumpkin_generator:
       - "#FB913B&lPossible Drops"
       - "&7Pumpkin &8(value: &a$20&8)"
       - "&7Condensed Pumpkin &8(value: &a$40&8)"
-      - "&7Money &8(value: &a$60&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -253,7 +242,7 @@ pumpkin_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 20 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: PUMPKIN_PIE
         display-name: "#FB913B&lPumpkin &a(/sell for money)"
@@ -275,7 +264,7 @@ pumpkin_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 40 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg2YmFkYjBkOTEzYjM5MWZiNDhkNzc3NmMzNzhjYTNmNGIyZGJlNzI0NTM0MDM0ZjM1MGNjZDM4ZjkwNDQ3MyJ9fX0=
         display-name: "#FB913B&lCondensed Pumpkin &a(/sell for money)"
@@ -294,10 +283,6 @@ pumpkin_generator:
           - "&7Use &a/sell &7to sell this for &a&n$40"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 60"
 
 coal_generator:
   # The display name of the generator that will be used across messages
@@ -344,7 +329,6 @@ coal_generator:
       - "#726365&lPossible Drops"
       - "&7Coal &8(value: &a$40&8)"
       - "&7Condensed Coal &8(value: &a$60&8)"
-      - "&7Money &8(value: &a$80&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -353,7 +337,7 @@ coal_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 40 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: COAL
         display-name: "#726365&lCoal &a(/sell for money)"
@@ -375,7 +359,7 @@ coal_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 60 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTY3YjQ3ZmJkMzdjNmQ5ZDhkMjJkOTczZTcyOTBlODA4NTJlOTI2NmEwNzZmYjdhYjIxNWFmZTkxYjgxZWQ2YyJ9fX0=
         display-name: "#726365&lCondensed Coal &a(/sell for money)"
@@ -394,10 +378,6 @@ coal_generator:
           - "&7Use &a/sell &7to sell this for &a&n$160"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 80"
 
 iron_generator:
   # The display name of the generator that will be used across messages
@@ -444,7 +424,6 @@ iron_generator:
       - "#FFDFE2&lPossible Drops"
       - "&7Iron &8(value: &a$60&8)"
       - "&7Condensed Iron &8(value: &a$80&8)"
-      - "&7Money &8(value: &a$120&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -453,7 +432,7 @@ iron_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 60 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: IRON_INGOT
         display-name: "#FFDFE2&lIron &a(/sell for money)"
@@ -475,7 +454,7 @@ iron_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 80 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFhNzg1OTE2ZDJkMTdjYTBlYTJhZDIzZDgwMjQ3YzdjNTAyMTQ0MzkwM2JiYWI3YjI0Yjc5MzRiNmEzNjFhYiJ9fX0=
         display-name: "#FFDFE2&lCondensed Iron &a(/sell for money)"
@@ -494,10 +473,6 @@ iron_generator:
           - "&7Use &a/sell &7to sell this for &a&n$80"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 120"
 
 gold_generator:
   # The display name of the generator that will be used across messages
@@ -544,7 +519,6 @@ gold_generator:
       - "#FBBE06&lPossible Drops"
       - "&7Gold &8(value: &a$80&8)"
       - "&7Condensed Gold &8(value: &a$120&8)"
-      - "&7Money &8(value: &a$160&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -553,7 +527,7 @@ gold_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 80 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: GOLD_INGOT
         display-name: "&e&lGold &a(/sell for money)"
@@ -575,7 +549,7 @@ gold_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 120 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdmNTdlN2FhOGRlODY1OTFiYjBiYzUyY2JhMzBhNDlkOTMxYmZhYmJkNDdiYmM4MGJkZDY2MjI1MTM5MjE2MSJ9fX0=
         display-name: "#FBBE06&lCondensed Gold &a(/sell for money)"
@@ -594,10 +568,6 @@ gold_generator:
           - "&7Use &a/sell &7to sell this for &a&n$120"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 160"
 
 redstone_generator:
   # The display name of the generator that will be used across messages
@@ -644,7 +614,6 @@ redstone_generator:
       - "#FB2727&lPossible Drops"
       - "&7Redstone &8(value: &a$120&8)"
       - "&7Condensed Redstone &8(value: &a$160&8)"
-      - "&7Money &8(value: &a$240&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -653,7 +622,7 @@ redstone_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 120 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: REDSTONE
         display-name: "#FB2727&lRedstone &a(/sell for money)"
@@ -675,7 +644,7 @@ redstone_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 160 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmI3OGZhNWRlZmU3MmRlYmNkOWM3NmFiOWY0ZTExNDI1MDQ3OWJiOWI0NGY0Mjg4N2JiZjZmNzM4NjEyYiJ9fX0=
         display-name: "#FB2727&lCondensed Redstone &a(/sell for money)"
@@ -694,10 +663,6 @@ redstone_generator:
           - "&7Use &a/sell &7to sell this for &a&n$160"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 240"
 
 lapis_generator:
   # The display name of the generator that will be used across messages
@@ -744,7 +709,6 @@ lapis_generator:
       - "#4042FB&lPossible Drops"
       - "&7Lapis &8(value: &a$160&8)"
       - "&7Condensed Lapis &8(value: &a$240&8)"
-      - "&7Money &8(value: &a$320&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -753,7 +717,7 @@ lapis_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 160 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: LAPIS_LAZULI
         display-name: "#4042FB&lLapis &a(/sell for money)"
@@ -775,7 +739,7 @@ lapis_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 240 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjljMTQ5Mzc5YmZmMzcxNGYwYTE0NmE0OTc1YTkyMzE1NmUxZDU1NjMyOGVkYjg5MjEzNTE4MmJhM2FhM2M4MyJ9fX0=
         display-name: "#4042FB&lCondensed Lapis &a(/sell for money)"
@@ -794,10 +758,6 @@ lapis_generator:
           - "&7Use &a/sell &7to sell this for &a&n$240"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 320"
 
 diamond_generator:
   # The display name of the generator that will be used across messages
@@ -844,7 +804,6 @@ diamond_generator:
       - "#4FF6FB&lPossible Drops"
       - "&7Diamond &8(value: &a$240&8)"
       - "&7Condensed Diamond &8(value: &a$320&8)"
-      - "&7Money &8(value: &a$400&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -853,7 +812,7 @@ diamond_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 240 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: DIAMOND
         display-name: "#4FF6FB&lDiamond &a(/sell for money)"
@@ -875,7 +834,7 @@ diamond_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 320 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjljMTQ5Mzc5YmZmMzcxNGYwYTE0NmE0OTc1YTkyMzE1NmUxZDU1NjMyOGVkYjg5MjEzNTE4MmJhM2FhM2M4MyJ9fX0=
         display-name: "#4FF6FB&lCondensed Diamond &a(/sell for money)"
@@ -894,10 +853,6 @@ diamond_generator:
           - "&7Use &a/sell &7to sell this for &a&n$320"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 400"
 
 emerald_generator:
   # The display name of the generator that will be used across messages
@@ -944,7 +899,6 @@ emerald_generator:
       - "#74FB3D&lPossible Drops"
       - "&7Emerald &8(value: &a$320&8)"
       - "&7Condensed Emerald &8(value: &a$400&8)"
-      - "&7Money &8(value: &a$480&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -953,7 +907,7 @@ emerald_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 320 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: EMERALD
         display-name: "#74FB3D&lEmerald &a(/sell for money)"
@@ -975,7 +929,7 @@ emerald_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 400 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmMwZTZkOWUyNDI3MzU0ODE5MThjNWZkMTQ0OThiZDc2MGJiOWY0ZmY2NDMwYWQ0Njk2YjM4ZThhODgzZGE5NyJ9fX0=
         display-name: "#74FB3D&lCondensed Emerald &a(/sell for money)"
@@ -994,10 +948,6 @@ emerald_generator:
           - "&7Use &a/sell &7to sell this for &a&n$400"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 480"
 
 quartz_generator:
   # The display name of the generator that will be used across messages
@@ -1044,7 +994,6 @@ quartz_generator:
       - "#F7FBB1&lPossible Drops"
       - "&7Quartz &8(value: &a$400&8)"
       - "&7Condensed Quartz &8(value: &a$480&8)"
-      - "&7Money &8(value: &a$560&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -1053,7 +1002,7 @@ quartz_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 400 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: QUARTZ
         display-name: "#F7FBB1&lQuartz &a(/sell for money)"
@@ -1075,7 +1024,7 @@ quartz_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 480 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNiNTAwMWE2NzAwN2E5M2FkZTY2NTkxNzVlOTA1NGE5Mjk3NmIwODdmYzYyOWYwNDJiY2Q1N2U3NzU3NjQ2YSJ9fX0=
         display-name: "#F7FBB1&lCondensed Quartz &a(/sell for money)"
@@ -1094,10 +1043,6 @@ quartz_generator:
           - "&7Use &a/sell &7to sell this for &a&n$480"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 560"
 
 gold_nugget_generator:
   # The display name of the generator that will be used across messages
@@ -1144,7 +1089,6 @@ gold_nugget_generator:
       - "#FBC379&lPossible Drops"
       - "&7Gold Nugget &8(value: &a$480&8)"
       - "&7Condensed Gold Nugget &8(value: &a$560&8)"
-      - "&7Money &8(value: &a$640&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -1153,7 +1097,7 @@ gold_nugget_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 480 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: GOLD_NUGGET
         display-name: "#FBC379&lGold Nugget &a(/sell for money)"
@@ -1175,7 +1119,7 @@ gold_nugget_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 560 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmViNDM1N2VkYWU0MjlmYmFkOTVmMzI4MTI2MjVjNjExMmNmMTdhZDk2NDZhNmU4ZTdlMDM2NjZlYjk1NGFjOCJ9fX0=
         display-name: "&e&lCondensed Gold Nugget &a(/sell for money)"
@@ -1194,10 +1138,6 @@ gold_nugget_generator:
           - "&7Use &a/sell &7to sell this for &a&n$560"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 640"
 
 sea_lantern_generator:
   # The display name of the generator that will be used across messages
@@ -1244,7 +1184,6 @@ sea_lantern_generator:
       - "#9DF6FF&lPossible Drops"
       - "&7Sea Lantern &8(value: &a$560&8)"
       - "&7Condensed Sea Lantern &8(value: &a$640&8)"
-      - "&7Money &8(value: &a$720&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -1253,7 +1192,7 @@ sea_lantern_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 560 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: PRISMARINE_CRYSTALS
         display-name: "#9DF6FF&lSea Lantern &a(/sell for money)"
@@ -1275,10 +1214,10 @@ sea_lantern_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 640 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
-        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2I1ZjNhOGE3YTUzMzhmZjhjMDFiZGQ0ZjViM2E1Y2FmNTQ5OWY0YzA0ZTg0ZTQyMzBkMDNmNDRjMzUyNWQ2ZCJ9fX0=
-        display-name: "&e&lCondensed Wheat &a(/sell for money)"
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2IxNTU3YjcwMGRmNTI0ZTA3ODYwYzc0NjNlYWNhOTQ1MTViYWI3ZTRiMWQzM2UzOWJkMjg5NmFkY2IwZWQ5MCJ9fX0=
+        display-name: "#9DF6FF&lCondensed Sea Lantern &a(/sell for money)"
         # Enchantment Format:
         # <ENCHANT>;<LEVEL>
         # Example: DURABILITY;1
@@ -1294,10 +1233,6 @@ sea_lantern_generator:
           - "&7Use &a/sell &7to sell this for &a&n$640"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 720"
 
 magma_generator:
   # The display name of the generator that will be used across messages
@@ -1344,7 +1279,6 @@ magma_generator:
       - "#FF4D0B&lPossible Drops"
       - "&7Magma &8(value: &a$640&8)"
       - "&7Condensed Magma &8(value: &a$720&8)"
-      - "&7Money &8(value: &a$800&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -1353,7 +1287,7 @@ magma_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 640 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: MAGMA_CREAM
         display-name: "#FF4D0B&lMagma &a(/sell for money)"
@@ -1375,7 +1309,7 @@ magma_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 720 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzIxZDA5MzBiZDYxZmVhNGNiOTAyN2IwMGU5NGUxM2Q2MjAyOWM1MjRlYTBiMzI2MGM3NDc0NTdiYTFiY2ZhMSJ9fX0=
         display-name: "#FF4D0B&lCondensed Magma &a(/sell for money)"
@@ -1394,10 +1328,6 @@ magma_generator:
           - "&7Use &a/sell &7to sell this for &a&n$720"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 800"
 
 glowstone_generator:
   # The display name of the generator that will be used across messages
@@ -1444,7 +1374,6 @@ glowstone_generator:
       - "#FBC831&lPossible Drops"
       - "&7Glowstone &8(value: &a$720&8)"
       - "&7Condensed Glowstone &8(value: &a$800&8)"
-      - "&7Money &8(value: &a$1600&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -1453,7 +1382,7 @@ glowstone_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 720 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: GLOWSTONE_DUST
         display-name: "#FBC831&lGlowstone &a(/sell for money)"
@@ -1475,7 +1404,7 @@ glowstone_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 800 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTU1YzdlOTk3NDk4YmRjM2I5YmU0MzhlZDgyN2E5NGUzZTcyMThhMzE4NTU4MDQwMDY3ODg1MzhlYjdmMDNmYSJ9fX0=
         display-name: "&e&lCondensed Glowstone &a(/sell for money)"
@@ -1494,10 +1423,6 @@ glowstone_generator:
           - "&7Use &a/sell &7to sell this for &a&n$800"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 1600"
 
 tube_coral_generator:
   # The display name of the generator that will be used across messages
@@ -1544,7 +1469,6 @@ tube_coral_generator:
       - "#2568FF&lPossible Drops"
       - "&7Tube Coral &8(value: &a$800&8)"
       - "&7Condensed Tube Coral &8(value: &a$1600&8)"
-      - "&7Money &8(value: &a$2000&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -1553,7 +1477,7 @@ tube_coral_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 800 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: TUBE_CORAL_FAN
         display-name: "#2568FF&lTube Coral &a(/sell for money)"
@@ -1575,7 +1499,7 @@ tube_coral_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 1600 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzlmYzNjZjU1MDhkNDBjMTQ2OTlkNWJmN2YyNTI3NTllMTk1NmFmOWE2NmQxNWE2YzM4NTQzNzhjNjFmNmQ5YSJ9fX0=
         display-name: "&e&lCondensed Tube Coral &a(/sell for money)"
@@ -1594,10 +1518,6 @@ tube_coral_generator:
           - "&7Use &a/sell &7to sell this for &a&n$1600"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 2000"
 
 brain_coral_generator:
   # The display name of the generator that will be used across messages
@@ -1644,7 +1564,6 @@ brain_coral_generator:
       - "#FB45F9&lPossible Drops"
       - "&7Brain Coral &8(value: &a$1600&8)"
       - "&7Condensed Brain Coral &8(value: &a$2000&8)"
-      - "&7Money &8(value: &a$2400&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -1653,7 +1572,7 @@ brain_coral_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 1600 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: BRAIN_CORAL_FAN
         display-name: "#FB45F9&lBrain Coral &a(/sell for money)"
@@ -1675,7 +1594,7 @@ brain_coral_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 2000 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU3ZGQ0M2U4ZjFjZDEzNzI2YzBmOTlhYzQwNDcxNTA0N2QxMmViNDJhMjhmZmM2YWU5YmZiM2I3MGQ3NjQwYSJ9fX0=
         display-name: "#FB45F9&lCondensed Brain Coral &a(/sell for money)"
@@ -1694,10 +1613,6 @@ brain_coral_generator:
           - "&7Use &a/sell &7to sell this for &a&n$2000"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 2400"
 
 bubble_coral_generator:
   # The display name of the generator that will be used across messages
@@ -1744,7 +1659,6 @@ bubble_coral_generator:
       - "#A82AFF&lPossible Drops"
       - "&7Bubble Coral &8(value: &a$2000&8)"
       - "&7Condensed Bubble Coral &8(value: &a$2400&8)"
-      - "&7Money &8(value: &a$2800&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -1753,7 +1667,7 @@ bubble_coral_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 2000 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: BUBBLE_CORAL_FAN
         display-name: "#A82AFF&lBubble Coral &a(/sell for money)"
@@ -1775,7 +1689,7 @@ bubble_coral_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 2400 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTNmMTgwNWVkY2QzMmI5N2FiMmYxOWEwM2JhYWIxZjhkNGRjNGRiOGVjN2EwMDRiMTRlYjY2NmQwOWZiODdmMiJ9fX0=
         display-name: "#A82AFF&lCondensed Bubble Coral &a(/sell for money)"
@@ -1794,10 +1708,6 @@ bubble_coral_generator:
           - "&7Use &a/sell &7to sell this for &a&n$2400"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 2800"
 
 fire_coral_generator:
   # The display name of the generator that will be used across messages
@@ -1844,7 +1754,6 @@ fire_coral_generator:
       - "#FB4242&lPossible Drops"
       - "&7Fire Coral &8(value: &a$2400&8)"
       - "&7Condensed Fire Coral &8(value: &a$2800&8)"
-      - "&7Money &8(value: &a$3200&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -1853,7 +1762,7 @@ fire_coral_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 2400 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: FIRE_CORAL_FAN
         display-name: "#FB4242&lFire Coral &a(/sell for money)"
@@ -1875,7 +1784,7 @@ fire_coral_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 2800 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlOGRlZDNjNzRlYWNkNzg0MTJhOTAzYjkwNGY1NTc3ODUwZDFlMjBkMzQ4NzhmZDc3NTk3YWQxNjMzYmY3NCJ9fX0=
         display-name: "#FB4242&lCondensed Fire Coral &a(/sell for money)"
@@ -1894,10 +1803,6 @@ fire_coral_generator:
           - "&7Use &a/sell &7to sell this for &a&n$2800"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 3200"
 
 horn_coral_generator:
   # The display name of the generator that will be used across messages
@@ -1944,7 +1849,6 @@ horn_coral_generator:
       - "#FBF945&lPossible Drops"
       - "&7Horn Coral &8(value: &a$2800&8)"
       - "&7Condensed Horn Coral &8(value: &a$3200&8)"
-      - "&7Money &8(value: &a$3600&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -1953,7 +1857,7 @@ horn_coral_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 2800 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: HORN_CORAL_FAN
         display-name: "#FBF945&lHorn Coral &a(/sell for money)"
@@ -1975,7 +1879,7 @@ horn_coral_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 3200 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ5MWI2ZTZhZTk0NTFjNDdlMDliZjFmZjIzZDUwZmZmODdiYTU5MjdhNTFmNDZmZmVkZjkyNmM1Y2JkZTc3ZiJ9fX0=
         display-name: "#FBF945&lCondensed Horn Coral &a(/sell for money)"
@@ -1994,10 +1898,6 @@ horn_coral_generator:
           - "&7Use &a/sell &7to sell this for &a&n$3200"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 3600"
 
 slime_generator:
   # The display name of the generator that will be used across messages
@@ -2044,7 +1944,6 @@ slime_generator:
       - "#ACFB74&lPossible Drops"
       - "&7Slime &8(value: &a$3200&8)"
       - "&7Condensed Slime &8(value: &a$3600&8)"
-      - "&7Money &8(value: &a$4000&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -2053,7 +1952,7 @@ slime_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 3200 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: SLIME_BALL
         display-name: "#ACFB74&lSlime &a(/sell for money)"
@@ -2075,7 +1974,7 @@ slime_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 40 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNmYmVhMjg3YjNhNjcyZWUzMjRjNzIwZTc3YWY4ZjczMGY4NTFkMjBkYWQ5ZmYxZmExYzA1MWVkZTViYzgxMyJ9fX0=
         display-name: "#ACFB74&lCondensed Slime &a(/sell for money)"
@@ -2094,10 +1993,6 @@ slime_generator:
           - "&7Use &a/sell &7to sell this for &a&n$3600"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 4000"
 
 honey_generator:
   # The display name of the generator that will be used across messages
@@ -2144,7 +2039,6 @@ honey_generator:
       - "#FFC61B&lPossible Drops"
       - "&7Honey &8(value: &a$3600&8)"
       - "&7Condensed Honey &8(value: &a$4000&8)"
-      - "&7Money &8(value: &a$4400&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -2153,7 +2047,7 @@ honey_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 3600 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: HONEY_BOTTLE
         display-name: "#FFC61B&lHoney &a(/sell for money)"
@@ -2175,7 +2069,7 @@ honey_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 4000 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGE3ZTBkNTVlYTgwNTE1Njk5NTVkYTEzODY5NzE3NGEwYmQ3NjE5MGIyZDU4Yjk5NzUwOTczN2RjZTVmYjYxZiJ9fX0=
         display-name: "#FFC61B&lCondensed Honey &a(/sell for money)"
@@ -2194,10 +2088,6 @@ honey_generator:
           - "&7Use &a/sell &7to sell this for &a&n$4000"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 4400"
 
 netherite_generator:
   # The display name of the generator that will be used across messages
@@ -2244,7 +2134,6 @@ netherite_generator:
       - "#B77F44&lPossible Drops"
       - "&7Netherite &8(value: &a$4000&8)"
       - "&7Condensed Netherite &8(value: &a$4400&8)"
-      - "&7Money &8(value: &a$4800&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -2253,7 +2142,7 @@ netherite_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 4000 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: NETHERITE_INGOT
         display-name: "#B77F44&lNetherite &a(/sell for money)"
@@ -2275,7 +2164,7 @@ netherite_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 4400 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQ4YjQ5ZThiYWZiMWZlZmI0OTUzOWJlNGU4MmNjN2UyYTI0NGJmMDQyODEzNGI5YTgwNTkxYTE3YzFhZTNjYiJ9fX0=
         display-name: "#B77F44&lCondensed Netherite &a(/sell for money)"
@@ -2294,10 +2183,6 @@ netherite_generator:
           - "&7Use &a/sell &7to sell this for &a&n$4400"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 4800"
 
 anchor_generator:
   # The display name of the generator that will be used across messages
@@ -2344,7 +2229,6 @@ anchor_generator:
       - "#742CFB&lPossible Drops"
       - "&7Wither Rose &8(value: &a$4400&8)"
       - "&7Condensed Wither Rose &8(value: &a$4800&8)"
-      - "&7Money &8(value: &a$5600&8)"
       - "&7"
       - "&7&oPlace down to activate the generator"
   # List of drops that can be dropped from the generators
@@ -2353,7 +2237,7 @@ anchor_generator:
     '0':
       chance: 60 # The chance that this drop will be chosen
       sell-value: 4400 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: WITHER_ROSE
         display-name: "#742CFB&lWither Rose &a(/sell for money)"
@@ -2375,7 +2259,7 @@ anchor_generator:
     '1':
       chance: 20 # The chance that this drop will be chosen
       sell-value: 4800 # The sell value of the drop item (only for dropped items)
-      commands: [] # Commands that will be executed
+      commands: [ ] # Commands that will be executed
       item:
         material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1YTA1OTkyYWZhMzdiMzgwNmI4MWYwMDAzY2E2MTdiM2MxY2JiOTE3MGEyMzA5MTE1YjljNmEwM2ViNzNhZiJ9fX0=
         display-name: "#742CFB&lCondensed Wither Rose &a(/sell for money)"
@@ -2394,7 +2278,6 @@ anchor_generator:
           - "&7Use &a/sell &7to sell this for &a&n$4800"
           - "&7"
           - "&e&lCONDENSED DROP!"
-    '2':
-      chance: 20 # The chance that this drop will be chosen
-      commands:
-        - "eco give {player} 5600"
+
+# Ignore this config option
+data: []

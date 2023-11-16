@@ -8,6 +8,7 @@ items:
   wheat_generator:
     type: GENERATOR
     generator: wheat_generator
+    page: 1
     cost: 50
     material: HAY_BLOCK
     display-name: "#D8A073&lWheat Generator"
@@ -33,6 +34,7 @@ items:
   melon_generator:
     type: GENERATOR
     generator: melon_generator
+    page: 1
     cost: 100
     material: MELON
     display-name: "#2CD842&lMelon Generator"
@@ -58,6 +60,7 @@ items:
   pumpkin_generator:
     type: GENERATOR
     generator: pumpkin_generator
+    page: 1
     cost: 200
     material: PUMPKIN
     display-name: "#2CD842&lMelon Generator"
@@ -83,6 +86,7 @@ items:
   coal_generator:
     type: GENERATOR
     generator: coal_generator
+    page: 1
     cost: 300
     material: COAL_BLOCK
     display-name: "#726365&lCoal Generator"
@@ -108,6 +112,7 @@ items:
   iron_generator:
     type: GENERATOR
     generator: iron_generator
+    page: 1
     cost: 400
     material: IRON_BLOCK
     display-name: "#FFDFE2&lIron Generator"
@@ -133,6 +138,7 @@ items:
   gold_generator:
     type: GENERATOR
     generator: gold_generator
+    page: 1
     cost: 500
     material: GOLD_BLOCK
     display-name: "#FBBE06&lGold Generator"
@@ -158,6 +164,7 @@ items:
   redstone_generator:
     type: GENERATOR
     generator: redstone_generator
+    page: 1
     cost: 750
     material: REDSTONE_BLOCK
     display-name: "#FB2727&lRedstone Generator"
@@ -183,6 +190,7 @@ items:
   lapis_generator:
     type: GENERATOR
     generator: lapis_generator
+    page: 1
     cost: 1000
     material: LAPIS_BLOCK
     display-name: "#4042FB&lLapis Generator"
@@ -203,11 +211,12 @@ items:
       - "&7Condensed Lapis &8(value: &a240&8)"
       - "&7Money &8(value: &a$320&8)"
       - "&7"
-      - "&7Cost to buy: &a$1000"
+      - "&7Cost to buy: &a$1,000"
       - "&a> Click to purchase <"
   diamond_generator:
     type: GENERATOR
     generator: diamond_generator
+    page: 1
     cost: 5000
     material: DIAMOND_BLOCK
     display-name: "#4FF6FB&lDiamond Generator"
@@ -228,11 +237,12 @@ items:
       - "&7Condensed Diamond &8(value: &a320&8)"
       - "&7Money &8(value: &a$400&8)"
       - "&7"
-      - "&7Cost to buy: &a$5000"
+      - "&7Cost to buy: &a$5,000"
       - "&a> Click to purchase <"
   emerald_generator:
     type: GENERATOR
     generator: emerald_generator
+    page: 1
     cost: 10000
     material: EMERALD_BLOCK
     display-name: "#74FB3D&lEmerald Generator"
@@ -253,11 +263,12 @@ items:
       - "&7Condensed Emerald &8(value: &a400&8)"
       - "&7Money &8(value: &a$480&8)"
       - "&7"
-      - "&7Cost to buy: &a$10000"
+      - "&7Cost to buy: &a$10,000"
       - "&a> Click to purchase <"
   quartz_generator:
     type: GENERATOR
     generator: quartz_generator
+    page: 1
     cost: 25000
     material: QUARTZ
     display-name: "#F7FBB1&lQuartz Generator"
@@ -278,11 +289,12 @@ items:
       - "&7Condensed Quartz &8(value: &a480&8)"
       - "&7Money &8(value: &a$560&8)"
       - "&7"
-      - "&7Cost to buy: &a$25000"
+      - "&7Cost to buy: &a$25,000"
       - "&a> Click to purchase <"
   gold_nugget_generator:
     type: GENERATOR
     generator: gold_nugget_generator
+    page: 1
     cost: 50000
     material: NETHER_GOLD_ORE
     display-name: "#FBC379&lGold Nugget Generator"
@@ -303,16 +315,17 @@ items:
       - "&7Condensed Gold Nugget &8(value: &a560&8)"
       - "&7Money &8(value: &a$640&8)"
       - "&7"
-      - "&7Cost to buy: &a$50000"
+      - "&7Cost to buy: &a$50,000"
       - "&a> Click to purchase <"
   sea_lantern_generator:
     type: GENERATOR
     generator: sea_lantern_generator
+    page: 2
     cost: 100000
     material: SEA_LANTERN
     display-name: "#9DF6FF&lSea Lantern Generator"
     glowing: false
-    slots: [24]
+    slots: [10]
     lore:
       - "&8Purchasable Generator"
       - "&7"
@@ -333,11 +346,12 @@ items:
   magma_generator:
     type: GENERATOR
     generator: magma_generator
+    page: 2
     cost: 250000
     material: MAGMA_BLOCK
     display-name: "#FF4D0B&lMagma Generator"
     glowing: false
-    slots: [25]
+    slots: [11]
     lore:
       - "&8Purchasable Generator"
       - "&7"
@@ -358,11 +372,12 @@ items:
   glowstone_generator:
     type: GENERATOR
     generator: glowstone_generator
+    page: 2
     cost: 500000
     material: GLOWSTONE
     display-name: "#FBC831&lGlowstone Generator"
     glowing: false
-    slots: [28]
+    slots: [12]
     lore:
       - "&8Purchasable Generator"
       - "&7"
@@ -383,11 +398,12 @@ items:
   tube_coral_generator:
     type: GENERATOR
     generator: tube_coral_generator
+    page: 2
     cost: 1000000
     material: TUBE_CORAL_BLOCK
     display-name: "#2568FF&lTube Coral Generator"
     glowing: false
-    slots: [29]
+    slots: [13]
     lore:
       - "&8Purchasable Generator"
       - "&7"
@@ -408,11 +424,12 @@ items:
   brain_coral_generator:
     type: GENERATOR
     generator: brain_coral_generator
+    page: 2
     cost: 2500000
     material: BRAIN_CORAL_BLOCK
     display-name: "#FB45F9&lBrain Coral Generator"
     glowing: false
-    slots: [30]
+    slots: [14]
     lore:
       - "&8Purchasable Generator"
       - "&7"
@@ -433,11 +450,12 @@ items:
   bubble_coral_generator:
     type: GENERATOR
     generator: bubble_coral_generator
+    page: 2
     cost: 5000000
     material: BUBBLE_CORAL_BLOCK
     display-name: "#A82AFF&lBubble Coral Generator"
     glowing: false
-    slots: [31]
+    slots: [15]
     lore:
       - "&8Purchasable Generator"
       - "&7"
@@ -458,11 +476,12 @@ items:
   fire_coral_generator:
     type: GENERATOR
     generator: fire_coral_generator
+    page: 2
     cost: 10000000
     material: FIRE_CORAL_BLOCK
     display-name: "#FB4242&lFire Coral Generator"
     glowing: false
-    slots: [32]
+    slots: [16]
     lore:
       - "&8Purchasable Generator"
       - "&7"
@@ -483,11 +502,12 @@ items:
   horn_coral_generator:
     type: GENERATOR
     generator: horn_coral_generator
+    page: 2
     cost: 25000000
     material: HORN_CORAL_BLOCK
     display-name: "#FBF945&lHorn Coral Generator"
     glowing: false
-    slots: [33]
+    slots: [19]
     lore:
       - "&8Purchasable Generator"
       - "&7"
@@ -508,11 +528,12 @@ items:
   slime_generator:
     type: GENERATOR
     generator: slime_generator
+    page: 2
     cost: 50000000
     material: SLIME_BLOCK
     display-name: "#ACFB74&lSlime Generator"
     glowing: false
-    slots: [34]
+    slots: [20]
     lore:
       - "&8Purchasable Generator"
       - "&7"
@@ -533,11 +554,12 @@ items:
   honey_generator:
     type: GENERATOR
     generator: honey_generator
+    page: 2
     cost: 100000000
     material: HONEY_BLOCK
     display-name: "#FFC61B&lHoney Generator"
     glowing: false
-    slots: [37]
+    slots: [21]
     lore:
       - "&8Purchasable Generator"
       - "&7"
@@ -558,11 +580,12 @@ items:
   netherite_generator:
     type: GENERATOR
     generator: netherite_generator
+    page: 2
     cost: 150000000
     material: NETHERITE_BLOCK
     display-name: "#B77F44&lNethrite Generator"
     glowing: false
-    slots: [38]
+    slots: [22]
     lore:
       - "&8Purchasable Generator"
       - "&7"
@@ -583,11 +606,12 @@ items:
   anchor_generator:
     type: GENERATOR
     generator: anchor_generator
+    page: 2
     cost: 200000000
     material: RESPAWN_ANCHOR
     display-name: "#742CFB&lAnchor Generator"
     glowing: false
-    slots: [39]
+    slots: [23]
     lore:
       - "&8Purchasable Generator"
       - "&7"
@@ -606,10 +630,67 @@ items:
       - "&7Cost to buy: &a$200,000,000"
       - "&a> Click to purchase <"
   # Unique identifier, could be anything
-  dummy:
+  filler:
     type: DUMMY
     material: BLACK_STAINED_GLASS_PANE
     display-name: "&f"
     glowing: false
     slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 44, 45, 46, 47, 47, 48, 49, 50, 51, 52, 53]
     lore: []
+  # Unique identifier, could be anything
+  filler_page_2:
+    type: DUMMY
+    material: BLACK_STAINED_GLASS_PANE
+    display-name: "&f"
+    glowing: false
+    page: 2
+    slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 44, 45, 46, 47, 47, 48, 49, 50, 51, 52, 53]
+    lore: []
+  next_page:
+    type: NEXT_PAGE
+    material: LIME_STAINED_GLASS_PANE
+    display-name: "&a&lNext Page"
+    glowing: false
+    page: 1
+    slots: [51]
+    lore:
+      - "&7"
+      - "&aGenerator Tier: &f12-24"
+      - "&7"
+      - "&a> Click to view next page <"
+  previous_page:
+    type: PREVIOUS_PAGE
+    material: RED_STAINED_GLASS_PANE
+    display-name: "&c&lPrevious Page"
+    glowing: false
+    page: 1
+    slots: [47]
+    lore:
+      - "&7"
+      - "&cGenerator Tier: &f1-12"
+      - "&7"
+      - "&c> Click to view Previous page <"
+  next_page_page_2:
+    type: NEXT_PAGE
+    material: LIME_STAINED_GLASS_PANE
+    display-name: "&a&lNext Page"
+    glowing: false
+    page: 2
+    slots: [51]
+    lore:
+      - "&7"
+      - "&cComing Soon!"
+      - "&7"
+      - "&a> Click to view next page <"
+  previous_page_page_2:
+    type: PREVIOUS_PAGE
+    material: RED_STAINED_GLASS_PANE
+    display-name: "&c&lPrevious Page"
+    glowing: false
+    page: 2
+    slots: [47]
+    lore:
+      - "&7"
+      - "&cGenerator Tier: &f1-12"
+      - "&7"
+      - "&c> Click to view Previous page <"
